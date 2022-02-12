@@ -1,0 +1,767 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Andrews2007InferenceFP}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=1,uniquepart=given,hash=819f147f61363909f87ab9d5fdf6c835}{%
+           family={Andrews},
+           familyi={A\bibinitperiod},
+           given={Donald\bibnamedelimb W.\bibnamedelimi K.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=1}}%
+        {{uniquename=0,uniquepart=base,hash=49df375084c6881b55147f66d960e278}{%
+           family={Soares},
+           familyi={S\bibinitperiod},
+           given={Gustavo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6cf2044369dae0e470ab0b3d95c2c505}
+      \strng{fullhash}{6cf2044369dae0e470ab0b3d95c2c505}
+      \strng{bibnamehash}{6cf2044369dae0e470ab0b3d95c2c505}
+      \strng{authorbibnamehash}{6cf2044369dae0e470ab0b3d95c2c505}
+      \strng{authornamehash}{6cf2044369dae0e470ab0b3d95c2c505}
+      \strng{authorfullhash}{6cf2044369dae0e470ab0b3d95c2c505}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Yale Economics Department Research Papers}
+      \field{title}{Inference for Parameters Defined by Moment Inequalities Using Generalized Moment Selection}
+      \field{year}{2007}
+      \true{nocite}
+    \endentry
+    \entry{andrews1994asymptotics}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=1,uniquepart=given,hash=819f147f61363909f87ab9d5fdf6c835}{%
+           family={Andrews},
+           familyi={A\bibinitperiod},
+           given={Donald\bibnamedelima WK},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{819f147f61363909f87ab9d5fdf6c835}
+      \strng{fullhash}{819f147f61363909f87ab9d5fdf6c835}
+      \strng{bibnamehash}{819f147f61363909f87ab9d5fdf6c835}
+      \strng{authorbibnamehash}{819f147f61363909f87ab9d5fdf6c835}
+      \strng{authornamehash}{819f147f61363909f87ab9d5fdf6c835}
+      \strng{authorfullhash}{819f147f61363909f87ab9d5fdf6c835}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica: Journal of the Econometric Society}
+      \field{title}{Asymptotics for semiparametric econometric models via stochastic equicontinuity}
+      \field{year}{1994}
+      \true{nocite}
+      \field{pages}{43\bibrangedash 72}
+      \range{pages}{30}
+    \endentry
+    \entry{athey2020combining}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=cab7b4f39472e6c01dc0fc30a32c6d89}{%
+           family={Athey},
+           familyi={A\bibinitperiod},
+           given={Susan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7a853740afbc544905334cf607b3cd51}{%
+           family={Chetty},
+           familyi={C\bibinitperiod},
+           given={Raj},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=1,uniquepart=given,hash=f74fd63923a56fa58b8687fdf1cc7ff2}{%
+           family={Imbens},
+           familyi={I\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{f098ac3b1859d4631f005cd52d3bfebd}
+      \strng{fullhash}{f098ac3b1859d4631f005cd52d3bfebd}
+      \strng{bibnamehash}{f098ac3b1859d4631f005cd52d3bfebd}
+      \strng{authorbibnamehash}{f098ac3b1859d4631f005cd52d3bfebd}
+      \strng{authornamehash}{f098ac3b1859d4631f005cd52d3bfebd}
+      \strng{authorfullhash}{f098ac3b1859d4631f005cd52d3bfebd}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2006.09676}
+      \field{title}{Combining experimental and observational data to estimate treatment effects on long term outcomes}
+      \field{year}{2020}
+      \true{nocite}
+    \endentry
+    \entry{athey2019surrogate}{report}{}
+      \name{author}{4}{uniquelist=3}{%
+        {{uniquename=0,uniquepart=base,hash=cab7b4f39472e6c01dc0fc30a32c6d89}{%
+           family={Athey},
+           familyi={A\bibinitperiod},
+           given={Susan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7a853740afbc544905334cf607b3cd51}{%
+           family={Chetty},
+           familyi={C\bibinitperiod},
+           given={Raj},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=1,uniquepart=given,hash=9f4fa8d00c0311b9cdad0f20ad429e57}{%
+           family={Imbens},
+           familyi={I\bibinitperiod},
+           given={Guido\bibnamedelima W},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=1}}%
+        {{uniquename=0,uniquepart=base,hash=6148da0291eb9fa4fa5588e617da36ac}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Hyunseung},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{a142019742cdc112515e56d33e826a7d}
+      \strng{fullhash}{2b47bd8f5ef5bfea01f40229d3789783}
+      \strng{bibnamehash}{a142019742cdc112515e56d33e826a7d}
+      \strng{authorbibnamehash}{a142019742cdc112515e56d33e826a7d}
+      \strng{authornamehash}{a142019742cdc112515e56d33e826a7d}
+      \strng{authorfullhash}{2b47bd8f5ef5bfea01f40229d3789783}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The surrogate index: Combining short-term proxies to estimate long-term treatment effects more rapidly and precisely}
+      \field{type}{techreport}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{bennett2019policy}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=ce06b176cf03957a91d812c1a41e9e90}{%
+           family={Bennett},
+           familyi={B\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2db96cc54afe3fe8c684be53af54a7bf}{%
+           family={Kallus},
+           familyi={K\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c5846d0ff2841fc9c9bae7da3b0b1ca1}
+      \strng{fullhash}{c5846d0ff2841fc9c9bae7da3b0b1ca1}
+      \strng{bibnamehash}{c5846d0ff2841fc9c9bae7da3b0b1ca1}
+      \strng{authorbibnamehash}{c5846d0ff2841fc9c9bae7da3b0b1ca1}
+      \strng{authornamehash}{c5846d0ff2841fc9c9bae7da3b0b1ca1}
+      \strng{authorfullhash}{c5846d0ff2841fc9c9bae7da3b0b1ca1}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1908.01920}
+      \field{title}{Policy evaluation with latent confounders via optimal balance}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{chen2021semiparametric}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=7475daa1cb086edff0cd0691571a915d}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jiafeng},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4d6a912596e242b0cc13cd623ebb5e3f}{%
+           family={Ritzwoller},
+           familyi={R\bibinitperiod},
+           given={David\bibnamedelima M},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7a9237eeea08944415794f6cf3dfb960}
+      \strng{fullhash}{7a9237eeea08944415794f6cf3dfb960}
+      \strng{bibnamehash}{7a9237eeea08944415794f6cf3dfb960}
+      \strng{authorbibnamehash}{7a9237eeea08944415794f6cf3dfb960}
+      \strng{authornamehash}{7a9237eeea08944415794f6cf3dfb960}
+      \strng{authorfullhash}{7a9237eeea08944415794f6cf3dfb960}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2107.14405}
+      \field{title}{Semiparametric Estimation of Long-Term Treatment Effects}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{fan2010sharp}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=3e0a266dda3c91a92b2eefc2bf10414d}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Yanqin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=967c3fa6ee593b8b3fb9892321592b26}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Sang\bibnamedelima Soo},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{1af1eabd7108b757802552b62a88bcfa}
+      \strng{fullhash}{1af1eabd7108b757802552b62a88bcfa}
+      \strng{bibnamehash}{1af1eabd7108b757802552b62a88bcfa}
+      \strng{authorbibnamehash}{1af1eabd7108b757802552b62a88bcfa}
+      \strng{authornamehash}{1af1eabd7108b757802552b62a88bcfa}
+      \strng{authorfullhash}{1af1eabd7108b757802552b62a88bcfa}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometric Theory}
+      \field{number}{3}
+      \field{title}{Sharp bounds on the distribution of treatment effects and their statistical inference}
+      \field{volume}{26}
+      \field{year}{2010}
+      \true{nocite}
+      \field{pages}{931\bibrangedash 951}
+      \range{pages}{21}
+    \endentry
+    \entry{fan2014copulas}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=3e0a266dda3c91a92b2eefc2bf10414d}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Yanqin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a4a103d050a59b8cf50ce433a3cc51ec}{%
+           family={Patton},
+           familyi={P\bibinitperiod},
+           given={Andrew\bibnamedelima J},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews}%
+      }
+      \strng{namehash}{d0da4aa39717dba3855a64d288b7e982}
+      \strng{fullhash}{d0da4aa39717dba3855a64d288b7e982}
+      \strng{bibnamehash}{d0da4aa39717dba3855a64d288b7e982}
+      \strng{authorbibnamehash}{d0da4aa39717dba3855a64d288b7e982}
+      \strng{authornamehash}{d0da4aa39717dba3855a64d288b7e982}
+      \strng{authorfullhash}{d0da4aa39717dba3855a64d288b7e982}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annu. Rev. Econ.}
+      \field{number}{1}
+      \field{title}{Copulas in econometrics}
+      \field{volume}{6}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{179\bibrangedash 200}
+      \range{pages}{22}
+    \endentry
+    \entry{fan2014identifying}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=3e0a266dda3c91a92b2eefc2bf10414d}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Yanqin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1eb88a5efd2a821d6f18fdc384c6f9b6}{%
+           family={Sherman},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=67185b34c223547b9e537f2f4d4199b8}{%
+           family={Shum},
+           familyi={S\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{2c8b7da3d3f401e07260207dc2d91b28}
+      \strng{fullhash}{2c8b7da3d3f401e07260207dc2d91b28}
+      \strng{bibnamehash}{2c8b7da3d3f401e07260207dc2d91b28}
+      \strng{authorbibnamehash}{2c8b7da3d3f401e07260207dc2d91b28}
+      \strng{authornamehash}{2c8b7da3d3f401e07260207dc2d91b28}
+      \strng{authorfullhash}{2c8b7da3d3f401e07260207dc2d91b28}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{2}
+      \field{title}{Identifying treatment effects under data combination}
+      \field{volume}{82}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{811\bibrangedash 822}
+      \range{pages}{12}
+    \endentry
+    \entry{hwang2021bounding}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=61509e7b0a982fa567253f676007c8e5}{%
+           family={Hwang},
+           familyi={H\bibinitperiod},
+           given={Yujung},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{61509e7b0a982fa567253f676007c8e5}
+      \strng{fullhash}{61509e7b0a982fa567253f676007c8e5}
+      \strng{bibnamehash}{61509e7b0a982fa567253f676007c8e5}
+      \strng{authorbibnamehash}{61509e7b0a982fa567253f676007c8e5}
+      \strng{authornamehash}{61509e7b0a982fa567253f676007c8e5}
+      \strng{authorfullhash}{61509e7b0a982fa567253f676007c8e5}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Available at SSRN 3866876}
+      \field{title}{Bounding Omitted Variable Bias Using Auxiliary Data}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{imbens2000role}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=1,uniquepart=given,hash=9f4fa8d00c0311b9cdad0f20ad429e57}{%
+           family={Imbens},
+           familyi={I\bibinitperiod},
+           given={Guido\bibnamedelima W},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{9f4fa8d00c0311b9cdad0f20ad429e57}
+      \strng{fullhash}{9f4fa8d00c0311b9cdad0f20ad429e57}
+      \strng{bibnamehash}{9f4fa8d00c0311b9cdad0f20ad429e57}
+      \strng{authorbibnamehash}{9f4fa8d00c0311b9cdad0f20ad429e57}
+      \strng{authornamehash}{9f4fa8d00c0311b9cdad0f20ad429e57}
+      \strng{authorfullhash}{9f4fa8d00c0311b9cdad0f20ad429e57}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biometrika}
+      \field{number}{3}
+      \field{title}{The role of the propensity score in estimating dose-response functions}
+      \field{volume}{87}
+      \field{year}{2000}
+      \true{nocite}
+      \field{pages}{706\bibrangedash 710}
+      \range{pages}{5}
+    \endentry
+    \entry{kallus2018removing}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=2db96cc54afe3fe8c684be53af54a7bf}{%
+           family={Kallus},
+           familyi={K\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c4deed771a2b99e88173c1d4f95c396b}{%
+           family={Puli},
+           familyi={P\bibinitperiod},
+           given={Aahlad\bibnamedelima Manas},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c39ea9ea2b55e1753c555a453a610aec}{%
+           family={Shalit},
+           familyi={S\bibinitperiod},
+           given={Uri},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{474e38006c6eb73c427f30c9f5c90932}
+      \strng{fullhash}{474e38006c6eb73c427f30c9f5c90932}
+      \strng{bibnamehash}{474e38006c6eb73c427f30c9f5c90932}
+      \strng{authorbibnamehash}{474e38006c6eb73c427f30c9f5c90932}
+      \strng{authornamehash}{474e38006c6eb73c427f30c9f5c90932}
+      \strng{authorfullhash}{474e38006c6eb73c427f30c9f5c90932}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1810.11646}
+      \field{title}{Removing hidden confounding by experimental grounding}
+      \field{year}{2018}
+      \true{nocite}
+    \endentry
+    \entry{kallus2018confounding}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=2db96cc54afe3fe8c684be53af54a7bf}{%
+           family={Kallus},
+           familyi={K\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b9e1d7c17694696833a7f501d67143a4}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Angela},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{94ee67824833d351384c9ed9a46b9422}
+      \strng{fullhash}{94ee67824833d351384c9ed9a46b9422}
+      \strng{bibnamehash}{94ee67824833d351384c9ed9a46b9422}
+      \strng{authorbibnamehash}{94ee67824833d351384c9ed9a46b9422}
+      \strng{authornamehash}{94ee67824833d351384c9ed9a46b9422}
+      \strng{authorfullhash}{94ee67824833d351384c9ed9a46b9422}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1805.08593}
+      \field{title}{Confounding-robust policy improvement}
+      \field{year}{2018}
+      \true{nocite}
+    \endentry
+    \entry{luenberger1997optimization}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=c7ad0ac497c0bce1820e6908e870b5d1}{%
+           family={Luenberger},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima G},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{c7ad0ac497c0bce1820e6908e870b5d1}
+      \strng{fullhash}{c7ad0ac497c0bce1820e6908e870b5d1}
+      \strng{bibnamehash}{c7ad0ac497c0bce1820e6908e870b5d1}
+      \strng{authorbibnamehash}{c7ad0ac497c0bce1820e6908e870b5d1}
+      \strng{authornamehash}{c7ad0ac497c0bce1820e6908e870b5d1}
+      \strng{authorfullhash}{c7ad0ac497c0bce1820e6908e870b5d1}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Optimization by vector space methods}
+      \field{year}{1997}
+      \true{nocite}
+    \endentry
+    \entry{masten2018identification}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=3afd6d9f7f1f23eb27ab051560b41d66}{%
+           family={Masten},
+           familyi={M\bibinitperiod},
+           given={Matthew\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a507f5115125f680639c5fe1ddc15c51}{%
+           family={Poirier},
+           familyi={P\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{942db81796c93f755755e235df884ead}
+      \strng{fullhash}{942db81796c93f755755e235df884ead}
+      \strng{bibnamehash}{942db81796c93f755755e235df884ead}
+      \strng{authorbibnamehash}{942db81796c93f755755e235df884ead}
+      \strng{authornamehash}{942db81796c93f755755e235df884ead}
+      \strng{authorfullhash}{942db81796c93f755755e235df884ead}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{1}
+      \field{title}{Identification of treatment effects under conditional partial independence}
+      \field{volume}{86}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{317\bibrangedash 351}
+      \range{pages}{35}
+    \endentry
+    \entry{masten2020assessing}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=3afd6d9f7f1f23eb27ab051560b41d66}{%
+           family={Masten},
+           familyi={M\bibinitperiod},
+           given={Matthew\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a507f5115125f680639c5fe1ddc15c51}{%
+           family={Poirier},
+           familyi={P\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e099ff1387894817ff321c11d23b70e2}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Linqi},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{38b1c6296e01ed8f9b0aec87abf11267}
+      \strng{fullhash}{38b1c6296e01ed8f9b0aec87abf11267}
+      \strng{bibnamehash}{38b1c6296e01ed8f9b0aec87abf11267}
+      \strng{authorbibnamehash}{38b1c6296e01ed8f9b0aec87abf11267}
+      \strng{authornamehash}{38b1c6296e01ed8f9b0aec87abf11267}
+      \strng{authorfullhash}{38b1c6296e01ed8f9b0aec87abf11267}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2012.15716}
+      \field{title}{Assessing Sensitivity to Unconfoundedness: Estimation and Inference}
+      \field{year}{2020}
+      \true{nocite}
+    \endentry
+    \entry{rosenbaum2002overt}{incollection}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2619036f349e499ca578ec1a7ebb3a46}{%
+           family={Rosenbaum},
+           familyi={R\bibinitperiod},
+           given={Paul\bibnamedelima R},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2619036f349e499ca578ec1a7ebb3a46}
+      \strng{fullhash}{2619036f349e499ca578ec1a7ebb3a46}
+      \strng{bibnamehash}{2619036f349e499ca578ec1a7ebb3a46}
+      \strng{authorbibnamehash}{2619036f349e499ca578ec1a7ebb3a46}
+      \strng{authornamehash}{2619036f349e499ca578ec1a7ebb3a46}
+      \strng{authorfullhash}{2619036f349e499ca578ec1a7ebb3a46}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Observational studies}
+      \field{title}{Overt bias in observational studies}
+      \field{year}{2002}
+      \true{nocite}
+      \field{pages}{71\bibrangedash 104}
+      \range{pages}{34}
+    \endentry
+    \entry{rubin1974estimating}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=49a367b6280de8a239f8bbdd573f996f}{%
+           family={Rubin},
+           familyi={R\bibinitperiod},
+           given={Donald\bibnamedelima B},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{49a367b6280de8a239f8bbdd573f996f}
+      \strng{fullhash}{49a367b6280de8a239f8bbdd573f996f}
+      \strng{bibnamehash}{49a367b6280de8a239f8bbdd573f996f}
+      \strng{authorbibnamehash}{49a367b6280de8a239f8bbdd573f996f}
+      \strng{authornamehash}{49a367b6280de8a239f8bbdd573f996f}
+      \strng{authorfullhash}{49a367b6280de8a239f8bbdd573f996f}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of educational Psychology}
+      \field{number}{5}
+      \field{title}{Estimating causal effects of treatments in randomized and nonrandomized studies.}
+      \field{volume}{66}
+      \field{year}{1974}
+      \true{nocite}
+      \field{pages}{688}
+      \range{pages}{1}
+    \endentry
+    \entry{stoye2020simple}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=29792d4028410db719327970c8f0740a}{%
+           family={Stoye},
+           familyi={S\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{29792d4028410db719327970c8f0740a}
+      \strng{fullhash}{29792d4028410db719327970c8f0740a}
+      \strng{bibnamehash}{29792d4028410db719327970c8f0740a}
+      \strng{authorbibnamehash}{29792d4028410db719327970c8f0740a}
+      \strng{authornamehash}{29792d4028410db719327970c8f0740a}
+      \strng{authorfullhash}{29792d4028410db719327970c8f0740a}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{econ.EM}
+      \field{eprinttype}{arXiv}
+      \field{title}{A Simple, Short, but Never-Empty Confidence Interval for Partially Identified Parameters}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2010.10484
+      \endverb
+    \endentry
+    \entry{van2000asymptotic}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=a1329a86e5d1f01024d85e4e198a54a1}{%
+           family={Van\bibnamedelimb der\bibnamedelima Vaart},
+           familyi={V\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Aad\bibnamedelima W},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge university press}%
+      }
+      \strng{namehash}{a1329a86e5d1f01024d85e4e198a54a1}
+      \strng{fullhash}{a1329a86e5d1f01024d85e4e198a54a1}
+      \strng{bibnamehash}{a1329a86e5d1f01024d85e4e198a54a1}
+      \strng{authorbibnamehash}{a1329a86e5d1f01024d85e4e198a54a1}
+      \strng{authornamehash}{a1329a86e5d1f01024d85e4e198a54a1}
+      \strng{authorfullhash}{a1329a86e5d1f01024d85e4e198a54a1}
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Asymptotic statistics}
+      \field{volume}{3}
+      \field{year}{2000}
+      \true{nocite}
+    \endentry
+    \entry{yadlowsky2018bounds}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=a4bc42d99314a91c052999544dab3f49}{%
+           family={Yadlowsky},
+           familyi={Y\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=131a250b717dd7f9c99161429a1b2534}{%
+           family={Namkoong},
+           familyi={N\bibinitperiod},
+           given={Hongseok},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e00817d8efb38870f5d183ae61e86f7d}{%
+           family={Basu},
+           familyi={B\bibinitperiod},
+           given={Sanjay},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b8fbef1897da5bf46822ced31bc865c6}{%
+           family={Duchi},
+           familyi={D\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c1e94d69d00ff9962d0675a90adaa7d5}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{64e1aea340477a2ab4c8d4bc8a11315e}
+      \strng{fullhash}{19380accebc068cdd90bc35ce5ee6b5f}
+      \strng{bibnamehash}{64e1aea340477a2ab4c8d4bc8a11315e}
+      \strng{authorbibnamehash}{64e1aea340477a2ab4c8d4bc8a11315e}
+      \strng{authornamehash}{64e1aea340477a2ab4c8d4bc8a11315e}
+      \strng{authorfullhash}{19380accebc068cdd90bc35ce5ee6b5f}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1808.09521}
+      \field{title}{Bounds on the conditional and average treatment effect with unobserved confounding factors}
+      \field{year}{2018}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
