@@ -111,7 +111,7 @@
 	
 	However, in real-world data, the above assumptions could be violated. Altough the unconfoundedness assumption in the experimental sample can be ensured if we use randomization scheme, the other two suffer from a variety of problems. For example, the latent unconfoundedness assumption can be shown to fail when a dimension restriction is violated: there are more independent confounding factors affecting the treatment assignment process than independent short-term outcome variables. The sample comparability condition, on the other hand, could fail as a result of selection bias: the experimental sample is not representative of the target distribution, even after we control for covariates. Moreover, it is widely known that without additional restrictions on the model, these assumptions are non-refutable. Namely, the data alone cannot tell us whether it is true. 
 	
-	Nonetheless, researchers interested in estimation of long-term treatment effects may want to assess how sensitive their results are to failures of these assumptions. A large literature on sensitivity analysis has developed to answer this question. Recent work by \textcite{masten2018identification, yadlowsky2018bounds, kallus2018confounding} each develop a nonparametric relaxation of the unconfoundedness assumption, which does not rely on auxiliary functional form or parametric distribution assumptions\footnote{Until recently, most approaches rely on strong auxiliary assumptions such as linearity of model or normality of the confounding factor, which can be undesirable because these auxiliary assumptions themselves is not needed for identification. }. Usually, the sensitivity analysis will produce a set of bounds corresponding to different choice of sensitivity parameters, and therefore allow researchers to evaluate how robust their results are to slight or severe violation of assumptions. However, most existing sensitivity analysis do not accommodate relaxation of multiple assumptions, and therefore cannot be directly used to assess the sensitivity of results to the above collection of assumptions. The propogation of sensitivity is new to the analysis. Take the estimation of long-term treatment effects as an example: we might interested in knowing how sensitive the results are to the relaxation of the latent unconfoundedness assumption if we've already relaxed the sample comparability assumption.
+	Nonetheless, researchers interested in estimation of long-term treatment effects may want to assess how sensitive their results are to failures of these assumptions. A large literature on sensitivity analysis has developed to answer this question. Recent work by \textcite{masten2018identification, yadlowsky2018bounds, kallus2018confounding} each develop a nonparametric relaxation of the unconfoundedness assumption, which does not rely on auxiliary functional form or parametric distribution assumptions\footnote{Until recently, most approaches rely on strong auxiliary assumptions such as linearity of model or normality of the confounding factor, which can be undesirable because these auxiliary assumptions themselves is not needed for identification. }. Usually, the sensitivity analysis will produce a set of bounds corresponding to different choice of sensitivity parameters, and therefore allow researchers to evaluate how robust their results are to slight or severe violation of assumptions. However, most existing sensitivity analysis do not accommodate relaxation of multiple assumptions, and therefore cannot be directly used to assess the sensitivity of results to the above collection of assumptions. The propagation of sensitivity is new to the analysis. Take the estimation of long-term treatment effects as an example: we might interested in knowing how sensitive the results are to the relaxation of the latent unconfoundedness assumption if we've already relaxed the sample comparability assumption.
 	
 	In this paper, I provide a method of sensitivity analysis for the data-combination scenario in the work of \textcite{athey2020combining}. Specifically, I apply the identification results of \textcite{yadlowsky2018bounds}, who uses likelihood-ratio restrictions to measure the relaxation of unconfoundedness-type assumptions. The likelihood-ratio restriction is directly interpretable: it controls the dependency of odds-ratio on unmeasured confounding factors. For each assumption, I introduce a sensitivity parameter to measure how severely it is violated. Extending the single-sample case, we derive bounds for quantities of interest, such as average treatment effect (ATE) on the long-term outcome. Regarding the propagation of sensitivity, we'll see that the relaxation of one assumption is complementary to the relaxation of the other in terms of bounding the target parameter.
 	
@@ -232,14 +232,14 @@ interest and state the key assumption which point identifies them, which are giv
 		\begin{array}{ll}
 		\inf _{L(w)} & \mathbb{E}[L(W(1))f(W(1)) \mid D=1] \\
 		\text { s.t. } & \mathbb{E}[L(W(1)) \mid D=1]=1 \\
-		& L(w) \geq 0, L(w) \leq B L(\tilde{w}) \text { for almomst every } y, \tilde{y} \in \mathbb{R}.
+		& L(w) \geq 0, L(w) \leq B L(\tilde{w}) \text { for almost every } y, \tilde{y} \in \mathbb{R}.
 		\end{array}
 		\end{equation*}
 		The solution to it is identical to 
 		\begin{equation*}
 		\begin{array}{ll}
 		\sup _{\mu} & \inf _{L(w)} \quad \mathbb{E}[(f(W(1))-\mu) L(W(1)) \mid D=1]+\mu \\
-		\text { s.t. } &\quad  L(w) \geq 0, L(w) \leq B L(\tilde{w}) \text { for almomst every } w, \tilde{w} \in \mathbb{R}.
+		\text { s.t. } &\quad  L(w) \geq 0, L(w) \leq B L(\tilde{w}) \text { for almost every } w, \tilde{w} \in \mathbb{R}.
 		\end{array}
 		\end{equation*}
 		which is further equal to
@@ -377,7 +377,7 @@ interest and state the key assumption which point identifies them, which are giv
 	In this section, I investigate the estimation and inference of the bounds for given $K$ and $H$. We directly work with the case where both $K$ and $H$ are allowed to be larger than 1. To begin with, we consider the case where $S(1)$ is a discrete random variable. Extension to the general case requires a more sophisticated argument, which we are still working on.
 	\subsection{Motivation}
 	
-	Equations \ref{eq:eq1} throught \ref{eq:eq6} defines the key objects in the identification of bounds. It is also clear that they constitute a set of moment conditions, which suggests that we can just use the method of moment to estimate these parameters.
+	Equations \ref{eq:eq1} through \ref{eq:eq6} defines the key objects in the identification of bounds. It is also clear that they constitute a set of moment conditions, which suggests that we can just use the method of moment to estimate these parameters.
 	\footnote{Consistency and asymptotic normality for the single-sample no-covariate case is given in existing literature. For example, see \textcite{yadlowsky2018bounds}. They use the same reasoning, but only for cases without covariates and "double" potential outcomes. For Z-estimator theory, see \textcite{van2000asymptotic} Chapter 5.}. In what follows, let $$\psi_x(y) = (y - x)_+ - K (y - x)_-$$ and $$\phi_x(y) = (y - x)_+ - H (y - x)_-.$$
 	
 	Suppose $S$ takes only finitely many values\footnote{This assumption ensures that we only need to deal with finitely many moment equations. The case where $S$ can }. Take the analysis of $S(1)$ as an example. Suppose $S(1) \in \{s_1,\ldots, s_m\}$. For each $s_k, k\in\{1,\ldots,m\}$, estimation of $\theta_1(s_k)$ is straightforward:
@@ -399,7 +399,7 @@ interest and state the key assumption which point identifies them, which are giv
 	Now, with estimators of $\theta_1$ and $\zeta_1$ at hand, one can easily construct estimators for $\tau$. One caveat here is that if $S$ is continuously distributed, the above procedure will fail since the event $\{S = s\}$ has probability 0. One could extend the current argument to deal with continuous $S$, but that is beyond the scope of this paper.
 	
 	\subsection{Method of Moment Estimator}
-	Note that, although $\psi_x$ and $\phi_x$ themselves are not differentiable everywhere (actually, only at one point $x$), after taking conditional expectation, the function is smooth enough. Too see this, consider the following simple problem: 
+	Note that, although $\psi_x$ and $\phi_x$ themselves are not differentiable everywhere (actually, only at one point $x$), after taking conditional expectation, the function is smooth enough. Too see this, consider the following simple quantity: 
 		\begin{align*}
 		\frac{\partial}{\partial \theta}\Ep[\psi_{\theta}(Y(1))] & = \frac{\partial}{\partial \theta} \Ep[(Y(1) - \theta)_+ - K (Y(1) - \theta)_-].
 		\end{align*}
@@ -407,9 +407,10 @@ interest and state the key assumption which point identifies them, which are giv
 		$$\frac{\partial}{\partial \theta} \Ep[(Y(1) - \theta)_+] = F_{Y(1)}(\theta) - 1$$
 		and 
 		$$\frac{\partial}{\partial \theta} \Ep[K(Y(1) - \theta)_-] = K F_{Y(1)}(\theta) $$
-		by the absolute continuity of $F_{Y(1)}$. Therefore, we can bypass the non-differentiability in moment functions, as shown in \textcite{andrews1994asymptotics}, and still have consistency and asymptotic normality for the MM estimator\footnote{In the appendix, I show a more detailed argument that one can use to prove consistency and asymptotic normality in this case.}.
+		by the absolute continuity of $F_{Y(1)}$. Therefore, we can bypass the problem of non-differentiability in moment functions, as shown in \textcite{andrews1994asymptotics}, and still have consistency and asymptotic normality for the MM estimator. 
+        In particular, one can get consistent and asymptotically normal estimator for $\theta$ and $\zeta$, which are important quantity in the derivation of the bounds. \footnote{In the appendix, I show a more detailed argument that one can use to prove consistency and asymptotic normality in this case.}.
 	
-	Therefore, we can formulate a Method of Moment(MM) estimator. The asymptotic distribution of $\hat{\tau}^-$ could be given by the following expansion:
+	The asymptotic distribution of $\hat{\tau}^-$ could be given by the following expansion:
 	\begin{equation}\label{eqn:deltamethod}
 	    \begin{aligned}
             \hat{\tau}^{-} - \tau^- = \tilde{p}_1 (m_1 + m_0 - v_1^- - v_0^+) + (1- p_1)(\tilde{v}_1^- - \tilde{m}_0) + \\p_1 (\tilde{m}_1 - \tilde{v}_0^+) + o_p(\frac{1}{\sqrt{n}})
@@ -432,7 +433,14 @@ interest and state the key assumption which point identifies them, which are giv
 	Stacking them into one vector $g_n(\gamma), $ with $\gamma = (p_1, \theta_1, m_1, \zeta_1, q)$. Let $G = \frac{\partial g(\gamma)}{\partial \gamma}$. The asymptotic variance of $\hat{\gamma}$ is then given by $G'V^{-1}G$. Note that $\mu_1^- = \frac{\zeta_1^- - (\sum_s \theta_1(s) q_s)  \times p_1}{1 - p_1}$ and $v_1^- = p_1 m_1 + (1 - p_1) \mu_1^- $, so the asymptotic distribution of $\hat{v}_1^-$ is available by an application of the delta method. Repeat the process for $v_1^+$, we can then use the expansion in equation \ref{eqn:deltamethod} to get the asymptotic variance for $\hat{\tau}^-.$
 	
 	\subsection{A note on inference}
-	The previous procedure can be used to construct confidence interval for $\tau^-$ and $\tau+$ respectively. Moreover, it can be shown that the two CI are independent. However, policy maker/researchers are mostly interested in inference on the true value $\tau$, rather than the bounds of $\tau$. There has been extensive work on how to conduct inference under partial identification(for example, see \textcite{Andrews2007InferenceFP, stoye2020simple}). Here, I'll take a naive and conservative approach: Let $[a_l, b_l]$ be the CI for $\tau^-$ with confidence level $1 - \alpha$, and $[a_h, b_h]$ be the CI for $\tau^+$ with confidence level $1 - \alpha$. Then $[a_l, b_h]$ should cover the true parameter $\tau$ with high probability. In particular, if $\tau^- = \tau^+$, i.e., assumptions A\ref{a1}-A\ref{a3} are all satisfied, $[a_l, b_l] = [a_h, b_h]$ and therefore the coverage rate of $[a_l, b_h]$ should be $1 - \alpha$. When A\ref{a2} or A\ref{a3} fails, the proposed CI would be conservative.
+	The previous procedure can be used to construct confidence interval for $\tau^-$ and $\tau+$ respectively. 
+    Moreover, it can be shown that the two CI are independent. 
+    However, policy maker/researchers are mostly interested in inference on the true value $\tau$, rather than the bounds of $\tau$. 
+    There has been extensive work on how to conduct inference under partial identification(for example, see \textcite{Andrews2007InferenceFP, stoye2020simple}). 
+    Here, I'll take a naive and conservative approach: Let $[a_l, b_l]$ be the CI for $\tau^-$ with confidence level $1 - \alpha$, and $[a_h, b_h]$ be the CI for $\tau^+$ with confidence level $1 - \alpha$. 
+    Then $[a_l, b_h]$ should cover the true parameter $\tau$ with high probability. 
+    In particular, if $\tau^- = \tau^+$, i.e., assumptions A\ref{a1}-A\ref{a3} are all satisfied, $[a_l, b_l] = [a_h, b_h]$ and therefore the coverage rate of $[a_l, b_h]$ should be $1 - \alpha$. 
+    When A\ref{a2} or A\ref{a3} fails, the proposed CI would be conservative, i.e., the coverage rate is larger than $1 - \alpha$.
 	
 	In the next section, I'll show the asymptotic properties of the proposed CI using simulated data.
 	
@@ -442,10 +450,13 @@ interest and state the key assumption which point identifies them, which are giv
 
 	\subsection{Setup}
 	Fix $K,H \geq 1$.Let $U$ be the confounder for sample comparability, and $U \sim N(0,1)$. Assume that $$S_0 \sim Bernoulli(0.5 + 0.15 \times \mathbb{I}(U > 0))$$ and $$S_1 \sim Bernoulli(0.5 + 0.3 \times \mathbb{I}(U > 0)).$$
-    For any individual, let the probability of being in the observational sample be $$\mathbb{P}(G = O) = \frac{1}{1 + \exp (-\log(H) * \mathbb{I}(U > 0) )},$$ so we have $H-$comparability, and larger $S_i$ in the experimental sample.
+    For any individual, let the probability of being in the observational sample be $$\mathbb{P}(G = E) = \frac{1}{1 + \exp (-\log(H) \times \mathbb{I}(U > 0) )},$$ so we have $H-$comparability. Also, on average, $S(i)$ is larger in the experimental sample than in the observational sample, 
+    which may contribute to over-estimation of $\tau$ (since the ACI use $S(i)$ in the experimental sample to approximate the true distribution of $S(i)$ in the observational sample). 
 
     Let $V$ be the confounder for latent-confoundedness, and $V \sim N(0,1)$. Let $$Y_0 = S_0 + 5 \times V + \varepsilon,$$ and $Y_1 = Y_0 + 1$, so the actual treatment effect on long-term outcome is constant among individuals and is equal to 1. Assume $D \mid G = E \sim Bernoulli(1/2)$.
-    Let the probability of being treated conditional on being in the observational sample be $$\mathbb{P}(D = 0 \mid G = O) = \frac{1}{1 + \exp (\log(K) * \mathbb{I}(V > 0) + 0.5 * \mathbb{I}(U > 0) )},$$ so we have $K-$latent-confoundedness, and individual with smaller $Y_i$ in observational sample more likely to be treated.
+    Let the probability of being treated conditional on being in the observational sample be $$\mathbb{P}(D = 1 \mid G = O) = \frac{1}{1 + \exp (-\log(K) \times \mathbb{I}(V > 0) - 0.5 \times \mathbb{I}(U > 0) )},$$ so we have $K-$latent-confoundedness. 
+    Also, even after conditioning on $U$, individuals with larger $Y_i$ in observational sample are more likely to be treated, 
+    which may again lead to over-estimation of $\tau$.
     
     \subsection{Simulation Results}
     
@@ -454,52 +465,61 @@ interest and state the key assumption which point identifies them, which are giv
     In figure \ref{fig:fig2}, I show the histogram of $\hat{\tau}^-$ and $\hat{\tau}^+$ for simulated data. 
     
     
-    \begin{figure}[!htbp]\label{fig:fig1}
+    \begin{figure}[!htbp]
         \centering
         \includegraphics[width=0.6\textwidth]{fig1.png}
         \caption{One realization}
-        \label{fig:my_label}
+        \label{fig:fig1}
     \end{figure}
     
-    \begin{figure}[!htbp]\label{fig:fig2}
+    \begin{figure}[!htbp]
         \centering
         \includegraphics[width = 0.6 \textwidth]{fig2.png}
         \caption{Histogram of Simulated Bounds}
-        \label{fig:my_label}
+        \label{fig:fig2}
     \end{figure}
     
-    I demonstrate the finite sample coverage property of confidence intervals for different $n$ in table 1. Because the true parameter $\tau$ is known from the simulation design, coverage statistics are estimable, and are presented for a number of choices of $n$ varying from 500 to 2000 in Table 1. The main takeaway is that the coverage property is good even in small sample.
+    I demonstrate the finite sample coverage property of confidence intervals for different $n$ in table \ref{tab:tab1} and table \ref{tab:tab2}. 
+    To examine the coverage properties of the proposed CIs, I consider two settings: in the first setting, there is no confounding at all, so $K$ and $H$ are both set to 0. In the second one, we have both confounding effects, and $K = H = 1.2$. 
+    Ideally, in the first setting, the CI should provide a coverage rate close to 95\%. The result for the first setting is presented in table \ref{tab:tab1}. When can see that the estimate is a little bit biased upward, but as $n$ gets larger the bias is reduced. 
+    The coverage rate is quite close to 95\% across all $n$.
+    In the second setting,   
+    Because the true parameter $\tau$ is known from the simulation design, coverage statistics are estimable, and are presented for a number of choices of $n$ varying from 500 to 2000 in Table 1. 
+    The main observation is that the coverage property is good even in small sample. Meanwhile, we can also see that the proposed CI is too conservative, since for small values of $K$ and $H$ it already provides coverage rate close to 100\%.
     
     \begin{table}
+        \centering
     \begin{threeparttable}
     \caption{Monte Carlo Results: $B = 2000, \tau = 1, K = H = 1$}
-        \begin{tabular}{|c|c|c|c|c|c|c|c|}
-        \hline $\mathrm{n}$ & $\widehat{\tau}^{-}$ & $\widehat{\sigma}^{-}$ & \text {Std. dev. of } $\widehat{\tau}^{-}$ & $\widehat{\tau}^{+}$ & $\widehat{\sigma}^{+}$ & \text {Std. dev. of } $\widehat{\tau}^{+}$ & \text {Coverage } \\
-        \hline 500 & 1.001 & 0.241 & 0.332 & 1.837 & 0.208 & 0.249 & 0.929 \\
-        1000 & 0.980 & 0.168 & 0.185 & 1.801 & 0.159 & 0.172 & 0.967 \\
-        2000 & 0.985 & 0.122 & 0.132 & 1.784 & 0.117 & 0.126 & 0.965 \\
+        \begin{tabular}{| c | c | c | c | c |}
+        \hline $\mathrm{n}$ & $\widehat{\tau}^{-}(\widehat{\tau}^{+})$ & $\widehat{\sigma}^{-}$ & \text {Std. dev. of } $\widehat{\tau}^{-}(\widehat{\tau}^{+})$ & \text {Coverage } \\
+        \hline 500 & 1.038 & NA & 0.732  & 0.9485 \\
+        1000 & 1.039 & NA & 0.495  & 0.9455 \\
+        2000 & 1.029 & NA & 0.357 & 0.947 \\
         \hline
         \end{tabular}
+        \label{tab:tab1}
     \begin{tablenotes}
       \small
-      \item Coverage statistics from $B = 2000$ simulations generated from a randomly selected linear model with d = 4 observed covariates. The true ATE in the simulation is $\tau = 1$, and unobserved confounding is chosen such that simulation satisfies $K = H = 1.5$. Std. dev. of $\tau^-$ refers to standard deviation between simulation runs (likewise for $\tau^+$. Coverage is for estimated 95\% confidence intervals $(\hat{\tau}^- - 1.96 \hat{\sigma}^-, \hat{\tau}^+ + 1.96 \hat{\sigma}^+)$. These are conservative because the true model cannot simultaneously be upward biased and downward biased. Therefore, we would expect a model under worst-case confounding to converge to 97.5\% coverage.
+      \item Coverage statistics from $B = 2000$ simulations generated from the model specified above. The true ATE in the simulation is $\tau = 1$, and unobserved confounding is chosen such that simulation satisfies $K = H = 1.5$. Std. dev. of $\tau^-$ refers to standard deviation between simulation runs (likewise for $\tau^+$. Coverage is for estimated 95\% confidence intervals $(\hat{\tau}^- - 1.96 \hat{\sigma}^-, \hat{\tau}^+ + 1.96 \hat{\sigma}^+)$. In this case, $\tau^-$ and $\tau^+$ coincide. 
     \end{tablenotes}
   \end{threeparttable}
   \end{table}
-    
+
     \begin{table}
     \begin{threeparttable}
-    \caption{Monte Carlo Results: $B = 2000, \tau = 1, K = H = 1.5$}
+    \caption{Monte Carlo Results: $B = 2000, \tau = 1, K = H = 1.2$}
         \begin{tabular}{|c|c|c|c|c|c|c|c|}
         \hline $\mathrm{n}$ & $\widehat{\tau}^{-}$ & $\widehat{\sigma}^{-}$ & \text {Std. dev. of } $\widehat{\tau}^{-}$ & $\widehat{\tau}^{+}$ & $\widehat{\sigma}^{+}$ & \text {Std. dev. of } $\widehat{\tau}^{+}$ & \text {Coverage } \\
-        \hline 500 & 1.001 & 0.241 & 0.332 & 1.837 & 0.208 & 0.249 & 0.929 \\
-        1000 & 0.980 & 0.168 & 0.185 & 1.801 & 0.159 & 0.172 & 0.967 \\
-        2000 & 0.985 & 0.122 & 0.132 & 1.784 & 0.117 & 0.126 & 0.965 \\
+        \hline 500 & 0.803 & NA & 0.71 & 2.080 & NA & 0.716& 0.9895 \\
+        1000 & 0.796 & NA & 0.480 & 2.058 & NA & 0.484 & 0.9945 \\
+        2000 & 0.802 & NA & 0.363 & 2.055 & NA & 0.365 & 0.9950 \\
         \hline
         \end{tabular}
+        \label{tab:tab2}
     \begin{tablenotes}
       \small
-      \item Coverage statistics from $B = 2000$ simulations generated from a randomly selected linear model with d = 4 observed covariates. The true ATE in the simulation is $\tau = 1$, and unobserved confounding is chosen such that simulation satisfies $K = H = 1.5$. Std. dev. of $\tau^-$ refers to standard deviation between simulation runs (likewise for $\tau^+$. Coverage is for estimated 95\% confidence intervals $(\hat{\tau}^- - 1.96 \hat{\sigma}^-, \hat{\tau}^+ + 1.96 \hat{\sigma}^+)$. These are conservative because the true model cannot simultaneously be upward biased and downward biased. Therefore, we would expect a model under worst-case confounding to converge to 97.5\% coverage.
+      \item Coverage statistics from $B = 2000$ simulations generated from the model specified above. The true ATE in the simulation is $\tau = 1$, and unobserved confounding is chosen such that simulation satisfies $K = H = 1.5$. Std. dev. of $\tau^-$ refers to standard deviation between simulation runs (likewise for $\tau^+$. Coverage is for estimated 95\% confidence intervals $(\hat{\tau}^- - 1.96 \hat{\sigma}^-, \hat{\tau}^+ + 1.96 \hat{\sigma}^+)$. These are conservative because the true model cannot simultaneously be upward biased and downward biased. Therefore, we would expect a model under worst-case confounding to converge to 97.5\% coverage.
     \end{tablenotes}
   \end{threeparttable}
   \end{table}
@@ -596,15 +616,15 @@ interest and state the key assumption which point identifies them, which are giv
 		
 		For $\zeta_1$, define $$\phi_x(y) = (y - x)_+ - H (y - x)_-.$$
 		\begin{equation*}
-		\mathbb{E}_n\left[(\hat{\theta}_1(S(1))-\hat{\zeta}_1)_{+}-H(\hat{\theta}_1(S(1))-\hat{\zeta}_1)_{-} \mid T=1, G = E\right] = 0
+		\mathbb{E}_n\left[(\hat{\theta}_1(S(1))-\hat{\zeta}_1)_{+}-H(\hat{\theta}_1(S(1))-\hat{\zeta}_1)_{-} \mid D=1, G = E\right] = 0
 		\end{equation*} 
 		can be written as 
 		\begin{equation*}
-		\mathbb{E}_n\left[ \phi_{\hat{\zeta}_1}(\hat{\theta}_1(S(1)))\mid T=1, G = E\right] = 0.
+		\mathbb{E}_n\left[ \phi_{\hat{\zeta}_1}(\hat{\theta}_1(S(1)))\mid D=1, G = E\right] = 0.
 		\end{equation*}
 		Note that $\phi_{x}(y)$ is uniformly continous in each argument when we fix the other one. By continous mapping theorem,
 		\begin{equation*}
-		\mathbb{E}_n\left[ \phi_{\hat{\zeta}_1}(\theta_1(S(1)))\mid T=1, G = E\right] = \littleop(1).
+		\mathbb{E}_n\left[ \phi_{\hat{\zeta}_1}(\theta_1(S(1)))\mid D=1, G = E\right] = \littleop(1).
 		\end{equation*}
 		Then again by Lemma 5.10 in \textcite{van2000asymptotic}, we have the consistency of $\hat{\zeta}_1$.
 	\end{proof}
@@ -614,24 +634,23 @@ interest and state the key assumption which point identifies them, which are giv
 		Suppose $P(Y(1) = \theta_{1,s_j} \mid S(1) = s_j, D = 1) = 0$ and $\zeta_1 \neq \theta_{1,s_j}$ for all $k = 1, \cdots, j$. Let $\pi = P(G = E)$. We have
 		$$\sqrt{n}(\hat{\theta}_{1,s} - \theta_{1,s}) \overset{d}{\to} N(0,V_s)$$ for all $s \in \{s_1, \ldots, s_k\}$, and $$\sqrt{n}(\hat{\zeta}_1-\zeta_1) \overset{d}{\to} N(0,V_{\zeta}).$$ 
 		Here, 
-		$$V_s = \frac{\Ep[\psi_{\theta_{1,s}}(Y(1))^2 \mid S(1) = s, D = 1]}{\pi P(S(1)=s, D=1) [K P(Y(1) \leq \theta \mid S(1) = s, D = 1) + P(Y(1) > \theta \mid S(1) = s, D = 1)]^2}$$ and
-		$$V_{\zeta} = \frac{\sum_{j=1}^k P(S(1) = s_j \mid T = 1)\phi_{\zeta_1}(\theta_{1,j})^2}{(1-\pi)P(T = 1)[H P(S(1) \leq \zeta_1 \mid T = 1) + P(S(1)  > \zeta_1 \mid T = 1)]^2}.$$
-		Moreover, the variance is minimal among all GMM estimator. There are natural plug-in estimators for these variances. 
+		$$V_s = \frac{\Ep[\psi_{\theta_{1,s}}(Y(1))^2 \mid S(1) = s, D = 1]}{(1-\pi) P(S(1)=s, D=1) [K P(Y(1) \leq \theta \mid S(1) = s, D = 1) + P(Y(1) > \theta \mid S(1) = s, D = 1)]^2}$$ and
+		$$V_{\zeta} = \frac{\sum_{j=1}^k P(S(1) = s_j \mid D = 1)\phi_{\zeta_1}(\theta_{1,j})^2}{\pi P(D = 1)[H P(S(1) \leq \zeta_1 \mid D = 1) + P(S(1)  > \zeta_1 \mid D = 1)]^2}.$$
 	\end{restatable}
 	
 	\begin{proof}
-		Let $\pi = \Pr(G = E).$ Without loss of generality, encode $G = O$ as $G = 1$ and $G = E$ as $G = 0$. From the above proof in theorem \ref{consistency}, we can see that for each $\theta_1(s)$, we can establish the corresponding asymptotic variance.
+		Let $\pi = \Pr(G = E).$ Without loss of generality, encode $G = O$ as $G = 0$ and $G = E$ as $G = 1$. From the above proof in theorem \ref{consistency}, we can see that for each $\theta_1(s)$, we can establish the corresponding asymptotic variance.
 		$$\Ep[\psi_{\theta_1(s)}(Y(1)) \mid S(1) = s, D = 1, G = O] = 0$$ is equivalent with 
-		$$\Ep[\Indc(S_i(1) = s) D_iG_i\psi_{\theta_1(s)}(Y_i(1))] = 0.$$
+		$$\Ep[\Indc(S_i(1) = s) D_i(1-G_i)\psi_{\theta_1(s)}(Y_i(1))] = 0.$$
 		Let $Z_i = (Y(1), S(1), T, D, G)$. Define $m_{\theta_1(s)}(Z_i) = \Indc(S_i = s, D_i=1) G_i \psi_{\theta(s)}(Y(1)).$ The above moment condition is then $$\Ep[m_{\theta_1(s)}(Z_i)] = 0.$$ 
 		Moreover, the moment for $S(1)$ is given by 
-		$$\mathbb{E}\left[ T_i(1-G_i)\phi_{\zeta_1}(\theta_1(S_i(1)))\right] = 0.$$
+		$$\mathbb{E}\left[ D_i G_i \phi_{\zeta_1}(\theta_1(S_i(1)))\right] = 0.$$
 		Rewrite the system of moments as follows:
 		\begin{align*}
-		\Ep[G\Indc(S(1) = s_1) D \psi_{\theta_{1,1}}(Y(1))] & = 0\\
+		\Ep[(1-G)\Indc(S(1) = s_1) D \psi_{\theta_{1,1}}(Y(1))] & = 0\\
 		& \cdots \\
-		\Ep[G\Indc(S(1) = s_k) D \psi_{\theta_{1,k}}(Y(1))] & = 0\\
-		\Ep[(1-G) \sum_{j =1}^k \Indc(S(1) = s_j) T \phi_{\zeta_1}(\theta_{1,j})] & = 0
+		\Ep[(1-G)\Indc(S(1) = s_k) D \psi_{\theta_{1,k}}(Y(1))] & = 0\\
+		\Ep[(G \sum_{j =1}^k \Indc(S(1) = s_j) D \phi_{\zeta_1}(\theta_{1,j})] & = 0
 		\end{align*}
 		This is a just identified system with noncorrelated moments.
 		Let's first focus on the first $k$ equations.
@@ -647,9 +666,9 @@ interest and state the key assumption which point identifies them, which are giv
 		by the absolute continuity of $F_{Y(1)}$.
 		
 		Applying Lemma 5.21 in \textcite{van2000asymptotic}, we have $\sqrt{n} (\hat{\theta}_1(s) - \theta_1(s)) \overset{d}{\to} N(0, V_s)$ where 
-		$$V_s = \frac{\Ep[\psi_{\theta_{1,s}}(Y(1))^2 \mid S(1) = s, D = 1]}{\pi P(S(1)=s, D=1) [K P(Y(1) \leq \theta \mid S(1) = s, D = 1) + P(Y(1) > \theta \mid S(1) = s, D = 1)]^2}$$
+		$$V_s = \frac{\Ep[\psi_{\theta_{1,s}}(Y(1))^2 \mid S(1) = s, D = 1]}{(1-\pi) P(S(1)=s, D=1) [K P(Y(1) \leq \theta \mid S(1) = s, D = 1) + P(Y(1) > \theta \mid S(1) = s, D = 1)]^2}$$
 		
-		Now, for the asymptotic distribution of $\zeta$, the process is essentially similar and $$V_* = \frac{\sum_{j=1}^k P(S(1) = s_j)\phi_{\zeta_1}(\theta_{1,j})^2}{(1-\pi)P(T = 1)[H P(S(1) \leq \zeta_1 \mid T = 1) + P(S(1)  > \zeta_1 \mid T = 1)]^2}.$$
+		Now, for the asymptotic distribution of $\zeta$, the process is essentially similar and $$V_* = \frac{\sum_{j=1}^k P(S(1) = s_j)\phi_{\zeta_1}(\theta_{1,j})^2}{\pi P(D = 1)[H P(S(1) \leq \zeta_1 \mid T = 1) + P(S(1)  > \zeta_1 \mid D = 1)]^2}.$$
 	\end{proof}
 	
 \end{document}

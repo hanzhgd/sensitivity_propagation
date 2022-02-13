@@ -1,17 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'main.blg'
-[36] biber-darwin:315> INFO - === Sat Feb 12, 2022, 17:47:23
-[55] Biber.pm:371> INFO - Reading 'main.bcf'
-[134] Biber.pm:886> INFO - Using all citekeys in bib section 0
-[145] Biber.pm:4093> INFO - Processing section 0
-[154] Biber.pm:4254> INFO - Looking for bibtex format file 'citation.bib' for section 0
-[155] bibtex.pm:1523> INFO - LaTeX decoding ...
-[179] bibtex.pm:1340> INFO - Found BibTeX data source 'citation.bib'
-[180] Utils.pm:193> WARN - Duplicate entry key: 'yadlowsky2018bounds' in file 'citation.bib', skipping ...
-[290] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[291] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[291] Biber.pm:3921> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[291] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[309] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[320] bbl.pm:739> INFO - Output to main.bbl
-[321] Biber.pm:110> INFO - WARNINGS: 1
+[37] biber-darwin:315> INFO - === Sun Feb 13, 2022, 12:53:18
+[59] Biber.pm:371> INFO - Reading 'main.bcf'
+[142] Biber.pm:886> INFO - Using all citekeys in bib section 0
+[153] Biber.pm:4093> INFO - Processing section 0
+[163] Biber.pm:4254> INFO - Looking for bibtex format file 'citation.bib' for section 0
+[164] bibtex.pm:1523> INFO - LaTeX decoding ...
+[188] bibtex.pm:1340> INFO - Found BibTeX data source 'citation.bib'
+[188] Utils.pm:193> WARN - Duplicate entry key: 'yadlowsky2018bounds' in file 'citation.bib', skipping ...
+[305] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[306] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[306] Biber.pm:3921> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[306] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[324] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[336] bbl.pm:739> INFO - Output to main.bbl
+[336] Biber.pm:110> INFO - WARNINGS: 1
