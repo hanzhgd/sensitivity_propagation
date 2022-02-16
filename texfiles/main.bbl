@@ -121,7 +121,7 @@
       \true{nocite}
     \endentry
     \entry{athey2019surrogate}{report}{}
-      \name{author}{4}{uniquelist=3}{%
+      \name{author}{4}{uniquelist=4}{%
         {{uniquename=0,uniquepart=base,hash=cab7b4f39472e6c01dc0fc30a32c6d89}{%
            family={Athey},
            familyi={A\bibinitperiod},
@@ -134,11 +134,11 @@
            given={Raj},
            giveni={R\bibinitperiod},
            givenun=0}}%
-        {{uniquename=1,uniquepart=given,hash=9f4fa8d00c0311b9cdad0f20ad429e57}{%
+        {{uniquename=1,uniquepart=given,hash=f74fd63923a56fa58b8687fdf1cc7ff2}{%
            family={Imbens},
            familyi={I\bibinitperiod},
-           given={Guido\bibnamedelima W},
-           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod},
            givenun=1}}%
         {{uniquename=0,uniquepart=base,hash=6148da0291eb9fa4fa5588e617da36ac}{%
            family={Kang},
@@ -150,12 +150,12 @@
       \list{institution}{1}{%
         {National Bureau of Economic Research}%
       }
-      \strng{namehash}{a142019742cdc112515e56d33e826a7d}
-      \strng{fullhash}{2b47bd8f5ef5bfea01f40229d3789783}
-      \strng{bibnamehash}{a142019742cdc112515e56d33e826a7d}
-      \strng{authorbibnamehash}{a142019742cdc112515e56d33e826a7d}
-      \strng{authornamehash}{a142019742cdc112515e56d33e826a7d}
-      \strng{authorfullhash}{2b47bd8f5ef5bfea01f40229d3789783}
+      \strng{namehash}{7c2cffcb8b21eaf3694813f7df0f9719}
+      \strng{fullhash}{7c2cffcb8b21eaf3694813f7df0f9719}
+      \strng{bibnamehash}{7c2cffcb8b21eaf3694813f7df0f9719}
+      \strng{authorbibnamehash}{7c2cffcb8b21eaf3694813f7df0f9719}
+      \strng{authornamehash}{7c2cffcb8b21eaf3694813f7df0f9719}
+      \strng{authorfullhash}{7c2cffcb8b21eaf3694813f7df0f9719}
       \field{sortinit}{A}
       \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
       \field{extradatescope}{labelyear}
@@ -535,6 +535,7 @@
       \strng{authorbibnamehash}{942db81796c93f755755e235df884ead}
       \strng{authornamehash}{942db81796c93f755755e235df884ead}
       \strng{authorfullhash}{942db81796c93f755755e235df884ead}
+      \field{extraname}{1}
       \field{sortinit}{M}
       \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
       \field{extradatescope}{labelyear}
@@ -549,6 +550,46 @@
       \true{nocite}
       \field{pages}{317\bibrangedash 351}
       \range{pages}{35}
+    \endentry
+    \entry{masten2021salvaging}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=3afd6d9f7f1f23eb27ab051560b41d66}{%
+           family={Masten},
+           familyi={M\bibinitperiod},
+           given={Matthew\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a507f5115125f680639c5fe1ddc15c51}{%
+           family={Poirier},
+           familyi={P\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{942db81796c93f755755e235df884ead}
+      \strng{fullhash}{942db81796c93f755755e235df884ead}
+      \strng{bibnamehash}{942db81796c93f755755e235df884ead}
+      \strng{authorbibnamehash}{942db81796c93f755755e235df884ead}
+      \strng{authornamehash}{942db81796c93f755755e235df884ead}
+      \strng{authorfullhash}{942db81796c93f755755e235df884ead}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{3}
+      \field{title}{Salvaging falsified instrumental variable models}
+      \field{volume}{89}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{1449\bibrangedash 1469}
+      \range{pages}{21}
     \endentry
     \entry{masten2020assessing}{article}{}
       \name{author}{3}{}{%

@@ -1,7 +1,7 @@
 \BOOKMARK [1][-]{section.1}{INTRODUCTION}{}% 1
 \BOOKMARK [1][-]{section.2}{MODEL, ASSUMPTIONS, AND INTERPRETATION}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Notation}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Review of Identification Assumptions in ACI\(2020\)}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Review of Identifying Assumptions in ACI\(2020\)}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Restriction on Likelihood Ratio}{section.2}% 5
 \BOOKMARK [1][-]{section.3}{IDENTIFICATION}{}% 6
 \BOOKMARK [2][-]{subsection.3.1}{Bounds}{section.3}% 7
@@ -13,5 +13,6 @@
 \BOOKMARK [1][-]{section.5}{SIMULATION}{}% 13
 \BOOKMARK [2][-]{subsection.5.1}{Setup}{section.5}% 14
 \BOOKMARK [2][-]{subsection.5.2}{Simulation Results}{section.5}% 15
-\BOOKMARK [1][-]{appendix.A}{Proofs}{}% 16
-\BOOKMARK [2][-]{subsection.A.1}{Detailed Proof of Consistency and Asymptotic Normality}{appendix.A}% 17
+\BOOKMARK [1][-]{section.6}{CONCLUSION}{}% 16
+\BOOKMARK [1][-]{appendix.A}{Proofs}{}% 17
+\BOOKMARK [2][-]{subsection.A.1}{Detailed Proof of Consistency and Asymptotic Normality}{appendix.A}% 18

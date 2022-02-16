@@ -17,6 +17,8 @@
 \usepackage{dsfont,mathrsfs,ushort} % Math style
 \usepackage{mathtools}
 
+\newtheorem{assp}{Assumption}
+
 % Style
 \usepackage{titlesec,titling} % Section titles
 \usepackage[nohead]{geometry} % Page & margins
@@ -54,7 +56,6 @@
 
 \newtheorem{thm}{Theorem}
 \newtheorem{defn}{Definition}
-\newtheorem{assp}{Assumption}
 \newtheorem{eg}{Example}
 \newtheorem{lem}{Lemma}
 \newtheorem{cor}{Corollary}
@@ -101,28 +102,40 @@
 	
 	\maketitle
 	
-	%\begin{abstract}
-	%\textcite{athey2020combining} proposed a data combination approach to identify the effect of treatment on long term outcome, where they rely on unconfoundedness in an experimental sample and latent unconfoundedness in an observational sample. This paper shows how to construct bounds for the effect of treatment on long-term outcome when we only have partial (latent) unconfoundedness, using technique in \textcite{yadlowsky2018bounds}, which is based on a likelihood ratio restriction. Estimators for bounds and accompanied inference procedure are also shown. Finally, I provide examples involving both simulated and real data to illustrate the accuracy of confidence interval and its practical significance.
-	%\end{abstract}
+	\begin{abstract}
+	\textcite{athey2020combining} proposed a data combination approach to identify the effect of treatment on long term outcome, where they rely on several key assumptions including unconfoundedness in an experimental sample, comparability of the experimental sample and an observational sample, and latent unconfoundedness in the observational sample. This paper shows how to construct bounds for the effect of treatment on long-term outcome when we only have partial (latent) unconfoundedness, using technique in \textcite{yadlowsky2018bounds}, which is based on a likelihood ratio restriction. Estimators for bounds and accompanied inference procedure are also shown. Finally, I provide examples involving both simulated and real data to illustrate the accuracy of confidence interval and its practical significance.
+	\end{abstract}
 
     \section{INTRODUCTION}
     
     Estimation of the long-term effects of a policy/treatment is crucial since it lays the foundation for many real-world policy decisions, such as class size adjustment and poverty alleviation. One challenge in estimation of the long-term effect is that it's often hard to use a randomized experiment to study the effect directly due to the delay of response. Recently, \textcite{athey2020combining} show that a combination of short-term experimental sample and long-term observational sample can help achieve identification (and also estimation of) long-term effects. In the experimental data, the researcher observes the randomized treatment and the short-term outcome($S$). In the observational data, the researcher observes the confounded treatment, short-term outcome($S$), and the long-term outcome($Y$). The key assumptions for identifications are as follows: treatment in the experimental sample is unconfounded, treatment in the observational sample is latent-unconfounded, and the two samples are "comparable"--which is often referred to as external validity in the literature.
 	
-	However, in real-world data, the above assumptions could be violated. Altough the unconfoundedness assumption in the experimental sample can be ensured if we use randomization scheme, the other two suffer from a variety of problems. For example, the latent unconfoundedness assumption can be shown to fail when a dimension restriction is violated: there are more independent confounding factors affecting the treatment assignment process than independent short-term outcome variables. The sample comparability condition, on the other hand, could fail as a result of selection bias: the experimental sample is not representative of the target distribution, even after we control for covariates. Moreover, it is widely known that without additional restrictions on the model, these assumptions are non-refutable. Namely, the data alone cannot tell us whether it is true. 
+	However, in real-world data, the above assumptions may not hold. Altough the unconfoundedness assumption in the experimental sample can be ensured if we use randomization scheme, the other two assumptions suffer from a variety of problems. For example, the latent unconfoundedness assumption can fail when there are more independent confounding factors affecting the treatment assignment process than independent short-term outcome variables\footnote{See \textcite{athey2020combining} for a discussion.}. The sample comparability condition, on the other hand, can fail if the experimental sample is not representative of the target distribution, even after we control for covariates, which is usually referred to as selection bias in the literature. Moreover, it is widely known that without additional data or restrictions on the model, these assumptions are non-refutable. Namely, the data alone cannot tell us whether the assumptions are true. 
 	
-	Nonetheless, researchers interested in estimation of long-term treatment effects may want to assess how sensitive their results are to failures of these assumptions. A large literature on sensitivity analysis has developed to answer this question. Recent work by \textcite{masten2018identification, yadlowsky2018bounds, kallus2018confounding} each develop a nonparametric relaxation of the unconfoundedness assumption, which does not rely on auxiliary functional form or parametric distribution assumptions\footnote{Until recently, most approaches rely on strong auxiliary assumptions such as linearity of model or normality of the confounding factor, which can be undesirable because these auxiliary assumptions themselves is not needed for identification. }. Usually, the sensitivity analysis will produce a set of bounds corresponding to different choice of sensitivity parameters, and therefore allow researchers to evaluate how robust their results are to slight or severe violation of assumptions. However, most existing sensitivity analysis do not accommodate relaxation of multiple assumptions, and therefore cannot be directly used to assess the sensitivity of results to the above collection of assumptions. The propagation of sensitivity is new to the analysis. Take the estimation of long-term treatment effects as an example: we might interested in knowing how sensitive the results are to the relaxation of the latent unconfoundedness assumption if we've already relaxed the sample comparability assumption.
+	Nonetheless, researchers interested in estimation of long-term treatment effects may want to assess how sensitive their results are to failures of these assumptions. Recent work by \textcite{masten2018identification, yadlowsky2018bounds, kallus2018confounding} each develops a nonparametric relaxation of the unconfoundedness assumption, which does not rely on auxiliary functional form or parametric distribution assumptions\footnote{Until recently, most approaches rely on strong auxiliary assumptions such as linearity of model or normality of the confounding factor, which can be undesirable because these auxiliary assumptions themselves is not needed for identification. }. Usually, the sensitivity analysis will produce a set of bounds corresponding to different choice of sensitivity parameters, and therefore allow researchers to evaluate how robust their results are to slight or severe violation of assumptions. Howeverm, the current method cannot be directly applied to the estimation of long-term treatment effects because of the presence of multiple assumptions. The propagation of sensitivity is a new phenomena when we consider the relaxation of multiple assumptions. Intuitively, the relaxations of multiple assumptions should be complementary. We might be interested in knowing how sensitive the results are to the relaxation of the latent unconfoundedness assumption if we've already relaxed the sample comparability assumption. Thus, we need to be able to take into consideration the sensitivity parameter of the sample comparability assumption, while assessing sensitivity of the result to the latent unconfoundedness assumption. 
+    %One possible extension to existing sensitivity analysis is to accommodate relaxation of multiple assumptions, which can be directly used to assess the sensitivity of results to the above collection of assumptions. 
+    
 	
 	In this paper, I provide a method of sensitivity analysis for the data-combination scenario in the work of \textcite{athey2020combining}. Specifically, I apply the identification results of \textcite{yadlowsky2018bounds}, who uses likelihood-ratio restrictions to measure the relaxation of unconfoundedness-type assumptions. The likelihood-ratio restriction is directly interpretable: it controls the dependency of odds-ratio on unmeasured confounding factors. For each assumption, I introduce a sensitivity parameter to measure how severely it is violated. Extending the single-sample case, we derive bounds for quantities of interest, such as average treatment effect (ATE) on the long-term outcome. Regarding the propagation of sensitivity, we'll see that the relaxation of one assumption is complementary to the relaxation of the other in terms of bounding the target parameter.
 	
 	%Many interesting problems arise as one think about assessing sensitivity to multiple assumptions.  Another problem concerns the interpretation on sharpness of bounds. When there is only one assumption to be relaxed, many existing methods provide bounds that are sharp, i.e., that's attainable by some DGP that's consistent with the choice of sensitivity parameters. However, when there are multiple assumptions to be relaxed, the sharpness of bounds is more subtle.
 	
-	Based on the identification result, I also study the estimation and inference of bounds in the data combination context. I translate the defining equations of bounds into a set of moment conditions and propose a Method of Moment(MM) estimator. When $S$ takes only discrete value, the asymptotic property of this MM estimator is derived. An application of delta method then gives the asymptotic distribution of bounds on $\tau$. The case where $S$ can take a continuum of values is more complicated, and is not covered in this version. With the estimation procedure, empirical researchers interested in using ACI's method to estimate long-term treatment effects can use these estimated identified sets (and accompanying confidence interval) to examine how sensitive their parameter estimates are to deviations from the baseline assumption latent unconfoundedness and external validity. Finally, I provide an example involving simulate data to illustrate the accuracy of estimation and inference procedure and its practical significance. 
+	Based on the identification result, I also study the estimation and inference of bounds in the data combination context.
+    I translate the defining equations of bounds into a set of moment conditions and propose a Method of Moment(MM) estimator. 
+    When $S$ takes only discrete value, the asymptotic property of this MM estimator is derived. An application of delta method then gives the asymptotic distribution of bounds on $\tau$. The case where $S$ can take a continuum of values is more complicated, and is not covered in this version.
+    With the estimation procedure, empirical researchers interested in using ACI's method to estimate long-term treatment effects can use these estimated identified sets (and accompanying confidence interval) to examine how sensitive their parameter estimates are to deviations from the baseline assumption latent unconfoundedness and external validity. 
+    Finally, I provide an example involving simulate data to illustrate the accuracy of estimation and inference procedure and its practical significance. 
 	
 
 	\medskip
 	\textbf{Related Literature} In the rest of this section, I review the related literature.
-	This paper connects with the work by \textcite{athey2020combining}, who pioneer the use of latent unconfoundedness assumption. It also contributes to a growing literature on sensitivity analysis, see, e.g., \textcite{masten2018identification, yadlowsky2018bounds}. The sensitivity analysis of sample comparability is related to the sample comparability literature. 
+
+    A directly related paper is the work by \textcite{athey2020combining}, who pioneer the use of latent unconfoundedness assumption. They show how one can combine experimental and observational samples to achieve identification of long-term treatment effects, when there exists short-term outcome that is helpful for controlling the confounding bias. A previous paper studies the same problem under the stronger assumption of surrogacy(see \textcite{athey2019surrogate}). \textcite{chen2021semiparametric} derive semiparametrically efficient estimator in these data combination setting. 
+
+    There is a growing literature on sensitivity analysis for irrefutable assumptions, which stems from the analysis of causal inference in a potential outcome framework. A review for relaxation conditional independence by modeling the conditional probabilities of treatment assignment given both observable and unobservable variables is given in \textcite{masten2018identification}. \textcite{rosenbaum2002overt} proposed a sensitivity analysis within the context of randomization inference for testing the sharp null hypotheses of no unit level treatment effects for all units in one’s data set.The method proposed by this paper is closely related to \textcite{yadlowsky2018bounds}, which generalize the idea proposed by \textcite{rosenbaum2002overt}. Their idea is to weaken the assumption of unconfoundedness by relaxing the restriction on likelihood ratio for observable outcome and outcome under the counterfactual. The study of sample comparability\footnote{It is also often referred to as external validity.} is closely related to the sensitivity analysis approach. 
+    Interestingly, the same method could be used to weaken not only the confoundedness assumption, but also the latent-unconfoundedness and sample comparability assumption. 
+
+    Meanwhile, relaxation of multiple assumptions introduces the problem of sensitivity propagation, which is not fully discussed in existing works. \textcite{masten2021salvaging} briefly discuss the implications of relaxing multiple assumptions in a instrumental-variable framework, and base their analysis on linear programming. 
 
 	\section{MODEL, ASSUMPTIONS, AND INTERPRETATION}
 	I study the problem of identifying long-term treatment effects as in \textcite{athey2020combining}(For convenience, I refer to the paper as ACI henceforth). In this section
@@ -131,9 +144,9 @@ interest and state the key assumption which point identifies them, which are giv
 	
 	
 	\subsection{Notation}
-	There are two available samples. Following \textcite{athey2020combining}, I will call them the experimental sample and the observational sample. Here the name "experimental sample" should not be taken literal since it could be generated by non-randomized assignment mechanism. Rather, it's just a label on the sample. We use $G$ to denote sample(group), $G=E$ for experimental and $G=O$ for observational, There is a single treatment that we are interested in. The treatment effects model follows the “potential outcomes” approach of \textcite{rubin1974estimating}. Instead of a single treatment variable as in most literature, we use two treatment variables to indicate the potentially different nature of the assignment mechanism. The treatment variable in the experimental sample is denoted as $T$, and the treatment variable in the observational sample is denoted as $D$\footnote{This is mainly for ease of demonstration. One can use the same variable accompanied $G = E$ or $G = O$ to differentiate the two cases. I just find using two variables more handy sometimes.}. There are two different sets of potential outcomes. The secondary (short-term) outcome, denoted by $S(d) \in \mathbb{R}$ for $d\in \{0,1\}$, are auxiliary for identification.  The primary (long-term) outcome is denoted as $Y(d) \in R$. Here $Y = Y(1)D + Y(0)(1-D)$ and $S = S(1)D + S(0)(1 - D)$. 
+	There are two available samples. Following \textcite{athey2020combining}, I will call them the experimental sample and the observational sample. Here the name "experimental sample" should not be taken literal since it could be generated by non-randomized assignment mechanism. Rather, it's just a label on the sample. We use $G$ to denote sample(group), $G=E$ for experimental and $G=O$ for observational, There is a single treatment that we are interested in. The treatment effects model follows the “potential outcomes” approach of \textcite{rubin1974estimating}. There are two different sets of potential outcomes. The secondary (short-term) outcome, denoted by $S(d) \in \mathbb{R}$ for $d\in \{0,1\}$, are auxiliary for identification.  The primary (long-term) outcome is denoted as $Y(d) \in R$. Here $Y = Y(1)D + Y(0)(1-D)$ and $S = S(1)D + S(0)(1 - D)$. For simplicity, I do not include any covariate, since the analysis for the with-covariate case is identical after conditioning on the covariate.
 
-	\subsection{Review of Identification Assumptions in ACI(2020)}
+	\subsection{Review of Identifying Assumptions in ACI(2020)}
 	The goal of \textcite{athey2020combining} is to identify $\Ep[Y(1) - Y(0) \mid G = O]$, the ATE in the observational sample. To achieve identification, they make the following assumptions\footnote{In their work, they also include a covariate vector $X$, which we will omit here.}.
 	\begin{assp}[Unconfoundedness in $G = E$]\label{a1}
 		For $t \in\{0,1\}$,
@@ -180,7 +193,7 @@ interest and state the key assumption which point identifies them, which are giv
 		and $P_{S(1) \mid G = O}, P_{S(1) \mid D=1, G = O}(s)$ are identified from the experimental and observational data separately. Indeed, $P_{S(1) \mid G = O}(s) = P_{S(1) \mid G = E}(s) = P_{S(1) \mid D = 1, G = E}(s)$ by unconfoundedness and $P_{S(1) \mid D=1, G = O}(s) = P_{S \mid D = 1, G = O}(s)$, which is identified from the observational sample.
 	\end{proof}
 	
-	In the proof above, the assumptions are essentially used to perform changes of measure, or changes of the conditioning sets. More specifically, A\ref{a1} is used to show $P_{S(1) \mid G = E}(s) = P_{S(1) \mid D = 1, G= E}(s)$; A\ref{a2} is used to show that $P_{S(1) \mid G = E}(s) = P_{S(1) \mid G = O}(s)$; A\ref{a3} is used to show $ \mathbb{E}[Y_i(1) \mid S_i(1) = s, D_i = 1, G = O] = \mathbb{E}[Y_i(1) \mid S_i(1) = s, D_i = 0, G = O]$. Naturally, one might see that by relaxing these assumptions, the equality breaks and point identification of $\Ep[Y(1) \mid G = O]$ is no longer available.
+	In the proof above, the assumptions are essentially used to perform changes of measure, or changes of the conditioning variables. More specifically, A\ref{a1} is used to show $P_{S(1) \mid G = E}(s) = P_{S(1) \mid D = 1, G= E}(s)$; A\ref{a2} is used to show that $P_{S(1) \mid G = E}(s) = P_{S(1) \mid G = O}(s)$; A\ref{a3} is used to show $ \mathbb{E}[Y_i(1) \mid S_i(1) = s, D_i = 1, G = O] = \mathbb{E}[Y_i(1) \mid S_i(1) = s, D_i = 0, G = O]$. Naturally, one might see that by relaxing these assumptions, the equality breaks and point identification of $\Ep[Y(1) \mid G = O]$ is no longer available.
 	
 	In \textcite{athey2020combining}, the authors mention that it's often easy to ensure that A\ref{a1}(unconfoundedness in the experimental sample) is satisfied, since the researcher can often use randomization in assignment of treatment. However, the validity of A\ref{a2} and A\ref{a3} are not guaranteed.
 	
@@ -208,11 +221,11 @@ interest and state the key assumption which point identifies them, which are giv
 			\item For fixed $s$, let $L^1(y,s) = \frac{\mathrm{d} P(Y_i(1) = y \mid S_i(1) = s, D_i = 0, G = O)}{\mathrm{d} P(Y_i(1) = y \mid S_i(1) = s, D_i = 1, G = O)}$. Then $L^1(y,s) \leq K L^1(y',s) \quad \forall y,y'$.
 		\end{enumerate}
 	\end{restatable}
-	\begin{proof}
-	    The proof is essentially the same as those given in \textcite{rosenbaum2002overt}, if we treat $S(1)$ as a covariate variable.
+	%\begin{proof}
+	 %   The proof is essentially the same as those given in \textcite{rosenbaum2002overt}, if we treat $S(1)$ as a covariate variable.
 	    
-		Equivalence of $(a)$ and $(b)$ is given in \textcite{rosenbaum2002overt}. Equivalence of $(b) \text{ and } (c)$ is given in \textcite{yadlowsky2018bounds}.
-	\end{proof}
+	%	Equivalence of $(a)$ and $(b)$ is given in \textcite{rosenbaum2002overt}. Equivalence of $(b) \text{ and } (c)$ is given in \textcite{yadlowsky2018bounds}.
+	%\end{proof}
 	
 	Similarly, if we interpret $G_i$ as a "treatment" assignment, and $S_i(d)$ as the target outcome, we can provide a set of equivalent conditions for $H-$comparability.
 	
@@ -271,7 +284,9 @@ interest and state the key assumption which point identifies them, which are giv
 	\end{proof}
 	
 	Lemma \ref{duality} relates the restriction on the likelihood profile to bounds on mean of counterfactual outcome. When $B = 1$, the restriction is strong since it requires that the likelihood for observing certain $w$ to be equal for treatment status. In this case, $\mathbb{E}\left[(f(W(1))-\mu)_{+}-B(f(W(1))-\mu)_{-} \mid D=1\right] = \mathbb{E}\left[(f(W(1))-\mu) \mid D=1\right] = 0$, so we are back in the case where $\Ep[f(W(1))]$ can be identified. When $B$ is larger than 1, the restriction is relaxed, and the lower bound is smaller than $\Ep[f(W) \mid D = 1)]$. Also, it's readily seen as $B$ increase, the lower bound will get looser, so the bound on $\Ep[f(W(1)) \mid D = 0]$ will be monotonic in the sensitivity parameter $B$ here. 
-	
+
+    I now make the following assumptions.
+
 	With these tools, we can establish bounds for $\Ep[Y(1)] \mid D = 0, G = O]$, which then allow us to bound $\Ep[Y(1)] \mid G = O]$. Take the lower bound of $\Ep[Y(1) \mid D= 1, G = O]$ as an example, we have the following theorem:
 	\begin{restatable}[Bounds on $\Ep(Y(1) \mid D = 0, G = O)$]{thm}{lb}\label{thm:thm2}
 		We maintain the assumption of randomization  in the experimental sample throughout.
@@ -460,32 +475,31 @@ interest and state the key assumption which point identifies them, which are giv
     
     \subsection{Simulation Results}
     
-    In figure \ref{fig:fig1}, I show one realization of the sensitivity envelope when one adjust $K$ while fixing $H$.
-    
-    In figure \ref{fig:fig2}, I show the histogram of $\hat{\tau}^-$ and $\hat{\tau}^+$ for simulated data. 
-    
+    In figure \ref{fig:fig1}, I show one realization of the lower and upper bounds when one adjust $K$ while fixing $H = 1.2$. This is a simple demonstration of the basic properties of these bounds. When $K = 1$, the latent-unconfoundedness assumption is valid, but since $H > 1$, sample comparability is violated, and therefore the lower bound and upper bound are different. As $K$ gets bigger, the identified set grows. In this realization, when $K = 1.5$, the lower bound is slightly larger than the true value of $\tau$, but if we take into account the uncertainty of estimation, we can construct a lower-CI for the lower bound which will contain the true value with high probability.    
     
     \begin{figure}[!htbp]
         \centering
-        \includegraphics[width=0.6\textwidth]{fig1.png}
-        \caption{One realization}
+        \includegraphics[width=0.6\textwidth]{../code/fig1.png}
+        \caption{Demonstration of the lower and upper bounds for $\tau$}
         \label{fig:fig1}
     \end{figure}
     
     \begin{figure}[!htbp]
         \centering
-        \includegraphics[width = 0.6 \textwidth]{fig2.png}
-        \caption{Histogram of Simulated Bounds}
+        \includegraphics[width = 0.6 \textwidth]{../code/fig2.png}
+        \caption{Histogram of Simulated Bounds: $B = 2000, n = 2000, K = H = 1.2$}
         \label{fig:fig2}
     \end{figure}
     
-    I demonstrate the finite sample coverage property of confidence intervals for different $n$ in table \ref{tab:tab1} and table \ref{tab:tab2}. 
-    To examine the coverage properties of the proposed CIs, I consider two settings: in the first setting, there is no confounding at all, so $K$ and $H$ are both set to 0. In the second one, we have both confounding effects, and $K = H = 1.2$. 
+    The finite sample coverage property of confidence intervals for different $n$ are demonstrated below in table \ref{tab:tab1} and table \ref{tab:tab2}. 
+    To examine the coverage properties of the proposed CIs, I consider two settings: in the first setting, there is no confounding at all, so $K$ and $H$ are both set to 1.
+    In the second one, we have both confounding effects, and $K = H = 1.2$. 
     Ideally, in the first setting, the CI should provide a coverage rate close to 95\%. The result for the first setting is presented in table \ref{tab:tab1}. When can see that the estimate is a little bit biased upward, but as $n$ gets larger the bias is reduced. 
     The coverage rate is quite close to 95\% across all $n$.
-    In the second setting,   
-    Because the true parameter $\tau$ is known from the simulation design, coverage statistics are estimable, and are presented for a number of choices of $n$ varying from 500 to 2000 in Table 1. 
-    The main observation is that the coverage property is good even in small sample. Meanwhile, we can also see that the proposed CI is too conservative, since for small values of $K$ and $H$ it already provides coverage rate close to 100\%.
+    Because the true parameter $\tau$ is known from the simulation design, coverage statistics are estimable, and are presented for a number of choices of $n$ varying from 500 to 2000 in table \ref{tab:tab1}.
+    In the second setting, the naive estimate based on ACI(2020) will give a upward-biased estimate of $\tau$. In this case, our proposed method gives a valid 95\% confidence interval. 
+    From table \ref{tab:tab2}, we can see that the coverage property is good even in small sample. 
+    Meanwhile, it's also evident that the proposed CI is too conservative, since for small values of $K$ and $H$ it already provides coverage rate close to 100\%. In figure \ref{fig:fig2}, I show the histogram of upper and lower bounds of $\tau$. The lower bounds concentrate slightly left to the true value, while the upper bounds concentrate around 2. 
     
     \begin{table}
         \centering
@@ -523,6 +537,20 @@ interest and state the key assumption which point identifies them, which are giv
     \end{tablenotes}
   \end{threeparttable}
   \end{table}
+
+  \section{CONCLUSION}
+
+  In this paper, I studied sensitivity analysis for estimation of long-term treatment effects.
+  The method proposed in ACI(2020) relies on the assumptions of latent unconfoundedness and sample comparability, which is vulnerable to confounding effect when there are no further data available (covariates or instruments).
+  I show how one can nonparametrically weaken the assumptions and derive identified sets in this case.
+  For chosen sensitivity parameter, I derived identified sets (a interval characterizing the lower bound and upper bound for the ATE) under for the average long-term treatment effect in the observational sample, which is often the quantity of interest in policy making.
+  They have simple and analytical characterization, and can be derived using change-of-measure technique together with convex duality. 
+  Moreover, since the (partial) identification is constructive, estimators are also directly available from the sample analogue.
+  Finally, I provide an example involving simulated data to illustrate the accuracy of estimation and inference procedure and its practical significance. The confidence interval provides valid coverage, but are too conservative as shown in the simulation study.
+
+  There are still several remaining questions. 
+  First, although the identification result can be directly extended to the cases where there are covariates, the current estimation procedure only works for the case where the cardinality of covariates is finite. Estimation in the presence of continuous covariates is a further research question. Second, unlike the method proposed in \textcite{masten2018identification}, 
+  the current procedure is useful for deriving identified sets for ATE, but is not as useful when one is interested in quantile treatment effects. Whether one can use the same idea to derive bounds on quantile treatment effects is also a helpful addition to current work. Finally, in this paper, the issue of correlated confounders is only briefly discussed and not addressed. In real-world applications, confounders for latent unconfoundedness and sample comparability could often be correlated and the researcher may have a priori knowledge about the correlation between confounders. In this case, it's desirable to have a procedure of assessing sensitivity that respects this piece of additional information. 
     
 	\medskip
 	
@@ -549,9 +577,9 @@ interest and state the key assumption which point identifies them, which are giv
 		$$
 		so the equivalence between the first two problem is established.
 		
-		The rest follows the same argument as in \textcite{yadlowsky2018bounds}(might include for ease of reading now).
+		The rest of the proof roughly follows the same argument as in \textcite{yadlowsky2018bounds}.
 		
-		Next, consider the problem of 
+		Consider the problem of 
 		$$
 		\begin{array}{ll}
 		\inf _{L(w)} & \quad \mathbb{E}[(f(W(1))-\mu) L(Y(1)) \mid D=1]+\mu \\
