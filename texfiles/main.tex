@@ -112,25 +112,24 @@
 	
 	However, in real-world data, the above assumptions may not hold. Altough the unconfoundedness assumption in the experimental sample can be ensured if we use randomization scheme, the other two assumptions suffer from a variety of problems. For example, the latent unconfoundedness assumption can fail when there are more independent confounding factors affecting the treatment assignment process than independent short-term outcome variables\footnote{See \textcite{athey2020combining} for a discussion.}. The sample comparability condition, on the other hand, can fail if the experimental sample is not representative of the target distribution, even after we control for covariates, which is usually referred to as selection bias in the literature. Moreover, it is widely known that without additional data or restrictions on the model, these assumptions are non-refutable. Namely, the data alone cannot tell us whether the assumptions are true. 
 	
-	Nonetheless, researchers interested in estimation of long-term treatment effects may want to assess how sensitive their results are to failures of these assumptions. Recent work by \textcite{masten2018identification, yadlowsky2018bounds, kallus2018confounding} each develops a nonparametric relaxation of the unconfoundedness assumption, which does not rely on auxiliary functional form or parametric distribution assumptions\footnote{Until recently, most approaches rely on strong auxiliary assumptions such as linearity of model or normality of the confounding factor, which can be undesirable because these auxiliary assumptions themselves is not needed for identification. }. Usually, the sensitivity analysis will produce a set of bounds corresponding to different choice of sensitivity parameters, and therefore allow researchers to evaluate how robust their results are to slight or severe violation of assumptions. Howeverm, the current method cannot be directly applied to the estimation of long-term treatment effects because of the presence of multiple assumptions. The propagation of sensitivity is a new phenomena when we consider the relaxation of multiple assumptions. Intuitively, the relaxations of multiple assumptions should be complementary. We might be interested in knowing how sensitive the results are to the relaxation of the latent unconfoundedness assumption if we've already relaxed the sample comparability assumption. Thus, we need to be able to take into consideration the sensitivity parameter of the sample comparability assumption, while assessing sensitivity of the result to the latent unconfoundedness assumption. 
+	Nonetheless, researchers interested in estimation of long-term treatment effects may want to assess how sensitive their results are to failures of these assumptions. Recent work by \textcite{masten2018identification, yadlowsky2018bounds, kallus2018confounding} each develops a nonparametric relaxation of the unconfoundedness assumption, which does not rely on auxiliary functional form or parametric distribution assumptions\footnote{Until recently, most approaches rely on strong auxiliary assumptions such as linearity of model or normality of the confounding factor, which can be undesirable because these auxiliary assumptions themselves is not needed for identification. }. Usually, the sensitivity analysis will produce a set of bounds corresponding to different choice of sensitivity parameters, and therefore allow researchers to evaluate how robust their results are to slight or severe violation of assumptions. However, the current method cannot be directly applied to the estimation of long-term treatment effects because of the presence of multiple assumptions. The propagation of sensitivity is a new phenomena when we consider the relaxation of multiple assumptions. We might be interested in knowing how sensitive the results are to the relaxation of the latent unconfoundedness assumption if we've already relaxed the sample comparability assumption. Therefore, it is necessary to take into consideration the sensitivity parameter of the sample comparability assumption, while assessing sensitivity of the result to the latent unconfoundedness assumption. 
     %One possible extension to existing sensitivity analysis is to accommodate relaxation of multiple assumptions, which can be directly used to assess the sensitivity of results to the above collection of assumptions. 
     
 	
-	In this paper, I provide a method of sensitivity analysis for the data-combination scenario in the work of \textcite{athey2020combining}. Specifically, I apply the identification results of \textcite{yadlowsky2018bounds}, who uses likelihood-ratio restrictions to measure the relaxation of unconfoundedness-type assumptions. The likelihood-ratio restriction is directly interpretable: it controls the dependency of odds-ratio on unmeasured confounding factors. For each assumption, I introduce a sensitivity parameter to measure how severely it is violated. Extending the single-sample case, we derive bounds for quantities of interest, such as average treatment effect (ATE) on the long-term outcome. Regarding the propagation of sensitivity, we'll see that the relaxation of one assumption is complementary to the relaxation of the other in terms of bounding the target parameter.
+	In this paper, I provide a method of sensitivity analysis for the data-combination scenario in \textcite{athey2020combining} when the final target is to estimate the long-term treatment effects. I focus on the analysis of latent-unconfoundedness and sample comparability assumption, while keeping the unconfoundedness assumption maintained.
+    I apply the identification results of \textcite{yadlowsky2018bounds}, which is based on weakened likelihood-ratio restrictions on counterfactual outcome. The likelihood-ratio restriction is directly interpretable: it controls the dependency of odds-ratio of assignment on unmeasured confounding factors. For each assumption, I introduce a sensitivity parameter to measure how severely it is violated. Extending the single-sample case, I derive bounds for the parameter of interest, the average treatment effect (ATE) on the long-term outcome. Regarding the propagation of sensitivity, we'll see that the relaxation of one assumption is complementary to the relaxation of the other in terms of bounding the target parameter.
 	
 	%Many interesting problems arise as one think about assessing sensitivity to multiple assumptions.  Another problem concerns the interpretation on sharpness of bounds. When there is only one assumption to be relaxed, many existing methods provide bounds that are sharp, i.e., that's attainable by some DGP that's consistent with the choice of sensitivity parameters. However, when there are multiple assumptions to be relaxed, the sharpness of bounds is more subtle.
 	
 	Based on the identification result, I also study the estimation and inference of bounds in the data combination context.
     I translate the defining equations of bounds into a set of moment conditions and propose a Method of Moment(MM) estimator. 
     When $S$ takes only discrete value, the asymptotic property of this MM estimator is derived. An application of delta method then gives the asymptotic distribution of bounds on $\tau$. The case where $S$ can take a continuum of values is more complicated, and is not covered in this version.
-    With the estimation procedure, empirical researchers interested in using ACI's method to estimate long-term treatment effects can use these estimated identified sets (and accompanying confidence interval) to examine how sensitive their parameter estimates are to deviations from the baseline assumption latent unconfoundedness and external validity. 
+    With the estimation procedure, empirical researchers interested in using ACI's method to estimate long-term treatment effects can use these estimated identified sets (and accompanying confidence interval) to examine how sensitive their parameter estimates are to deviations from the baseline assumption latent unconfoundedness and sample comparability. 
     Finally, I provide an example involving simulate data to illustrate the accuracy of estimation and inference procedure and its practical significance. 
 	
 
 	\medskip
-	\textbf{Related Literature} In the rest of this section, I review the related literature.
-
-    A directly related paper is the work by \textcite{athey2020combining}, who pioneer the use of latent unconfoundedness assumption. They show how one can combine experimental and observational samples to achieve identification of long-term treatment effects, when there exists short-term outcome that is helpful for controlling the confounding bias. A previous paper studies the same problem under the stronger assumption of surrogacy(see \textcite{athey2019surrogate}). \textcite{chen2021semiparametric} derive semiparametrically efficient estimator in these data combination setting. 
+	\textbf{Related Literature} In the rest of this section, I review the related literature. A directly related paper is the work by \textcite{athey2020combining}, who pioneer the use of latent unconfoundedness assumption. They show how one can combine experimental and observational samples to achieve identification of long-term treatment effects, when there exists short-term outcome that is helpful for controlling the confounding bias. A previous paper studies the same problem under the stronger assumption of surrogacy(see \textcite{athey2019surrogate}). \textcite{chen2021semiparametric} derive semiparametrically efficient estimator in these data combination setting. 
 
     There is a growing literature on sensitivity analysis for irrefutable assumptions, which stems from the analysis of causal inference in a potential outcome framework. A review for relaxation conditional independence by modeling the conditional probabilities of treatment assignment given both observable and unobservable variables is given in \textcite{masten2018identification}. \textcite{rosenbaum2002overt} proposed a sensitivity analysis within the context of randomization inference for testing the sharp null hypotheses of no unit level treatment effects for all units in one’s data set.The method proposed by this paper is closely related to \textcite{yadlowsky2018bounds}, which generalize the idea proposed by \textcite{rosenbaum2002overt}. Their idea is to weaken the assumption of unconfoundedness by relaxing the restriction on likelihood ratio for observable outcome and outcome under the counterfactual. The study of sample comparability\footnote{It is also often referred to as external validity.} is closely related to the sensitivity analysis approach. 
     Interestingly, the same method could be used to weaken not only the confoundedness assumption, but also the latent-unconfoundedness and sample comparability assumption. 
@@ -138,8 +137,7 @@
     Meanwhile, relaxation of multiple assumptions introduces the problem of sensitivity propagation, which is not fully discussed in existing works. \textcite{masten2021salvaging} briefly discuss the implications of relaxing multiple assumptions in a instrumental-variable framework, and base their analysis on linear programming. 
 
 	\section{MODEL, ASSUMPTIONS, AND INTERPRETATION}
-	I study the problem of identifying long-term treatment effects as in \textcite{athey2020combining}(For convenience, I refer to the paper as ACI henceforth). In this section
-I set up the notation and some maintained assumptions. I review parameters of
+    To study the partial identification of long-term treatment effects under weakened assumptions, I set up the notation and some maintained assumptions. I follow \textcite{athey2020combining} closely in setup and notation(For convenience, I refer to the paper as ACI henceforth). I review parameters of
 interest and state the key assumption which point identifies them, which are given in ACI. I discuss how I relax those assumptions. Identified sets under these relaxations are derived in Section 3. I conclude this section by providing an interpretation of the deviations from baseline assumptions.
 	
 	
@@ -207,7 +205,7 @@ interest and state the key assumption which point identifies them, which are giv
 	 Let $L^t(s) = \frac{\mathrm{d} P(S_i(t) = s \mid G_i = O)}{\mathrm{d} P(S_i(t) = s \mid G_i = E)}$. Suppose $$L^t(s) \leq H L^t(s') \quad \forall s,s' \text{ and } t \in \{0,1\}.$$ Then the distribution of primitives satisfy $H$-external-validity. It relaxes the sample comparability assumption.
 	\end{defn}
 
-	When $K$ and $H$ are equal to 1, we are back in the identified case. The restrictions are direct consequences of a change of measure, since, for example, $$\Ep[Y(1) \mid S(1) = s, D = 0, G = O] = \Ep[L^1(Y(1),s) Y(1) \mid S(1) = s, D = 1, G = O].$$ In fact, the likelihood ratio restriction is equivalent to a functional form restriction on the log odds ratio. 
+	When $K$ and $H$ are equal to 1, assumptions A\ref{a2} and A\ref{a3} holds. The restrictions are direct consequences of a change of measure, since, for example, $$\Ep[Y(1) \mid S(1) = s, D = 0, G = O] = \Ep[L^1(Y(1),s) Y(1) \mid S(1) = s, D = 1, G = O].$$ In fact, the likelihood ratio restriction is equivalent to a functional form restriction on the log odds ratio. 
 	The following result adapted from \textcite{yadlowsky2018bounds} shows the case for $K$-confoundedness.
 	
 	\begin{restatable}{lem}{confound}
@@ -216,8 +214,10 @@ interest and state the key assumption which point identifies them, which are giv
 		The following three conditions are equivalent:
 		\begin{enumerate}[label=(\alph*)]
 			\item The log odds ratio has the following form $$\log \left(\frac{P(D=1 \mid S(1) = s, U=u, G = O)}{P(D=0 \mid S(1)=s, U=u, G = O)}\right)=\kappa(s)+\log (K) b(u)$$
-			where $u$ stands for the unmeasured confounding variable, $b(u)$ is some real-valued function that takes value in $[0,1]$.
+			where $u$ stands for the unmeasured confounding variable, and $\norm{b}_{\infty} \leq 1$.
+
 			\item $\forall u, u',$ $$\frac{P(D=1 \mid S(1) = s, U=u, G =O)}{P(D=0 \mid S(1)=s, U=u, G = O)} \times\frac{P(D=0 \mid S(1) = s, U=u', G =O)}{P(D=1 \mid S(1)=s, U=u', G = O)} \leq K.$$
+			
 			\item For fixed $s$, let $L^1(y,s) = \frac{\mathrm{d} P(Y_i(1) = y \mid S_i(1) = s, D_i = 0, G = O)}{\mathrm{d} P(Y_i(1) = y \mid S_i(1) = s, D_i = 1, G = O)}$. Then $L^1(y,s) \leq K L^1(y',s) \quad \forall y,y'$.
 		\end{enumerate}
 	\end{restatable}
@@ -226,8 +226,7 @@ interest and state the key assumption which point identifies them, which are giv
 	    
 	%	Equivalence of $(a)$ and $(b)$ is given in \textcite{rosenbaum2002overt}. Equivalence of $(b) \text{ and } (c)$ is given in \textcite{yadlowsky2018bounds}.
 	%\end{proof}
-	
-	Similarly, if we interpret $G_i$ as a "treatment" assignment, and $S_i(d)$ as the target outcome, we can provide a set of equivalent conditions for $H-$comparability.
+	Intuitively, $K-$confoundedness allows the assignment mechanism to depend on the unmeasured confounder to a certain degree characterized by sensitivity parameter $K$. When $K = 1$, the dependence is killed and the latent-unconfoundedness assumption is restored. Otherwise, the log-odd ratio of treatment assignment can be expressed as a function of a bounded tranformation of the unmeasured confounder($U$), even after controlling for short-term outcome $S(1)$. Similarly, if we interpret $G_i$ as an assignment, and $S_i(d)$ as the target outcome, we can provide a set of equivalent conditions for $H-$comparability.
 	
 	\section{IDENTIFICATION}
 	
@@ -285,13 +284,11 @@ interest and state the key assumption which point identifies them, which are giv
 	
 	Lemma \ref{duality} relates the restriction on the likelihood profile to bounds on mean of counterfactual outcome. When $B = 1$, the restriction is strong since it requires that the likelihood for observing certain $w$ to be equal for treatment status. In this case, $\mathbb{E}\left[(f(W(1))-\mu)_{+}-B(f(W(1))-\mu)_{-} \mid D=1\right] = \mathbb{E}\left[(f(W(1))-\mu) \mid D=1\right] = 0$, so we are back in the case where $\Ep[f(W(1))]$ can be identified. When $B$ is larger than 1, the restriction is relaxed, and the lower bound is smaller than $\Ep[f(W) \mid D = 1)]$. Also, it's readily seen as $B$ increase, the lower bound will get looser, so the bound on $\Ep[f(W(1)) \mid D = 0]$ will be monotonic in the sensitivity parameter $B$ here. 
 
-    I now make the following assumptions.
-
 	With these tools, we can establish bounds for $\Ep[Y(1)] \mid D = 0, G = O]$, which then allow us to bound $\Ep[Y(1)] \mid G = O]$. Take the lower bound of $\Ep[Y(1) \mid D= 1, G = O]$ as an example, we have the following theorem:
 	\begin{restatable}[Bounds on $\Ep(Y(1) \mid D = 0, G = O)$]{thm}{lb}\label{thm:thm2}
 		We maintain the assumption of randomization  in the experimental sample throughout.
 		\begin{enumerate}[label=(\alph*)]
-			\item Under $K$-confoundedness and external-validity, we have the following lower bound for $\Ep[Y(1) \mid D = 0, G = O]$:
+			\item Under $K$-confoundedness and sample comparability, we have the following lower bound for $\Ep[Y(1) \mid D = 0, G = O]$:
 			$$\mu^-_1 = \int \theta_1(s) \mathrm{d} P_{S(1) | D = 0, G = O}(s)$$ where 
 			\begin{equation}\label{eq:eq1}
 			\begin{array}{ll}
@@ -356,13 +353,13 @@ interest and state the key assumption which point identifies them, which are giv
 	It's also direct to extend these argument to get an upper bound for $\tau$. To avoid repetitiveness the argument is omitted here.
 	
 	\subsection{Sharpness of these bounds}
-	It's important to remark on the sharpness of these bound. Consider the lower bound for $\Ep[Y(1) \mid D = 0, G = O]$. Under $K-$confoundedness and $H-$comparability, there exist unobservable confounder $U,V$ such that $$\log \left(\frac{P(D=1 \mid S(1) = s, U=u, G = O)}{P(D=0 \mid S(1)=s, U=u, G = O)}\right)=\kappa(s)+\log (K) b(u)$$ with $\norm{b}_{\infty} = 1$, and 
-	$$\log \left(\frac{P(G=E \mid V=v)}{P(G=O \mid V=v)}\right)=\kappa'+\log (H) b'(v)$$ with $\norm{b'}_{\infty} = 1$. Note that $\theta_1(s)$ is attained when
+	It's important to remark on the sharpness of these bound. Consider the lower bound for $\Ep[Y(1) \mid D = 0, G = O]$. Under $K-$confoundedness and $H-$comparability, there exist unobservable confounder $U,V$ such that $$\log \left(\frac{P(D=1 \mid S(1) = s, U=u, G = O)}{P(D=0 \mid S(1)=s, U=u, G = O)}\right)=\kappa(s)+\log (K) b(u)$$ with $\norm{b}_{\infty} \leq 1$, and 
+	$$\log \left(\frac{P(G=E \mid V=v)}{P(G=O \mid V=v)}\right)=\kappa'+\log (H) b'(v)$$ with $\norm{b'}_{\infty} \leq 1$. Note that $\theta_1(s)$ is attained when
 	$$L(y,s) = \frac{\mathrm{d} P(Y_i(1) = y \mid S_i(1) = s, D_i =0, G_i = O)}{\mathrm{d} P(Y_i(1) = y \mid S_i(1) = s, D_i = 1, G_i = O)}$$ takes only two values  $\{\frac{K}{K + 1}, \frac{1}{K + 1}\}$ almost surely, and $\zeta_1^-$ is attained when  
 	$$L(s) = \frac{\mathrm{d} P(S_i(1) = s \mid G_i = O)}{\mathrm{d} P(S_i(1) = s \mid , G_i = E)}$$
 	takes only two values  $\{\frac{H}{H + 1}, \frac{1}{H + 1}\}$ almost surely. It's possible these conditions hold marginally but not jointly\footnote{An extreme case is that $U = V$.}. When $U$ and $V$ are independent, these bounds are sharp.
 	
-	Therefore, if a DGP satisfies both $K-$confoundedness and $H-$comparability is sharp for each of them, our bounds can still be too loose because of potential dependence of confounders. Compared to existing sharp bounds on the treatment effect, this is undesirable, but that is the price to pay if we do not pursue a parametric approach here.
+	Therefore, if a DGP satisfies both $K-$confoundedness and $H-$comparability is sharp for each of them, our bounds can still be too loose because of potential correlation (more generally, dependence) of confounders. Compared to existing sharp bounds on the treatment effect, this is an undesirable feature.
 	
 % 	\begin{rmk}[Monotonicity wrt to $K$ or $H$]
 % 		It is readily seen that as $K$ or $H$ gets larger, the bound gets looser. Indeed, suppose $K$ gets larger, then in equantion \ref{eq:eq1}:
@@ -389,17 +386,17 @@ interest and state the key assumption which point identifies them, which are giv
 % 	\end{rmk}
 
     \section{ESTIMATION AND INFERENCE}
-	In this section, I investigate the estimation and inference of the bounds for given $K$ and $H$. We directly work with the case where both $K$ and $H$ are allowed to be larger than 1. To begin with, we consider the case where $S(1)$ is a discrete random variable. Extension to the general case requires a more sophisticated argument, which we are still working on.
+	In this section, I investigate the estimation and inference of bounds for $\tau$ when $K$ and $H$ are given. We directly work with the case where both $K$ and $H$ are allowed to be larger than 1. To begin with, we consider the case where $S(1)$ is a discrete random variable. Extension to the general case requires a more sophisticated argument, which we are still working on.
 	\subsection{Motivation}
 	
 	Equations \ref{eq:eq1} through \ref{eq:eq6} defines the key objects in the identification of bounds. It is also clear that they constitute a set of moment conditions, which suggests that we can just use the method of moment to estimate these parameters.
-	\footnote{Consistency and asymptotic normality for the single-sample no-covariate case is given in existing literature. For example, see \textcite{yadlowsky2018bounds}. They use the same reasoning, but only for cases without covariates and "double" potential outcomes. For Z-estimator theory, see \textcite{van2000asymptotic} Chapter 5.}. In what follows, let $$\psi_x(y) = (y - x)_+ - K (y - x)_-$$ and $$\phi_x(y) = (y - x)_+ - H (y - x)_-.$$
+	\footnote{Consistency and asymptotic normality for the single-sample no-covariate case is given in existing literature. For example, see \textcite{yadlowsky2018bounds}. They use the same reasoning, but only for cases without covariates and multiple potential outcomes. For Z-estimator theory, see \textcite{van2000asymptotic} Chapter 5.}. In what follows, let $$\psi_x(y) = (y - x)_+ - K (y - x)_-$$ and $$\phi_x(y) = (y - x)_+ - H (y - x)_-.$$
 	
-	Suppose $S$ takes only finitely many values\footnote{This assumption ensures that we only need to deal with finitely many moment equations. The case where $S$ can }. Take the analysis of $S(1)$ as an example. Suppose $S(1) \in \{s_1,\ldots, s_m\}$. For each $s_k, k\in\{1,\ldots,m\}$, estimation of $\theta_1(s_k)$ is straightforward:
+	Suppose $S$ takes only finitely many values\footnote{This assumption ensures that we only need to deal with finitely many moment equations. The case where $S$ can }. Take the analysis of $S(1)$ and $Y(1)$ as an example. Suppose $S(1) \in \{s_1,\ldots, s_m\}$. For each $s_k, k\in\{1,\ldots,m\}$, estimation of $\theta_1(s_k)$ is straightforward:
 	$$
 	\mathbb{E}\left[\psi_{\hat{\theta}_1(s_k)}(Y) \mid S = s_k, D=1, G = O\right] = 0
 	$$
-	and thus by $Z$-estimator technique, we might replace all $\Ep$ by its sample analogue $\Ep_n$ for $s_k$ to get an estimator for $\hat{\theta}_1(s_k)$. Namely, 
+	and thus by the principle of analogy, we might replace all $\Ep$ by its sample analogue $\Ep_n$ for $s_k$ to get an estimator for $\hat{\theta}_1(s_k)$. Namely, 
 	$$
     \mathbb{E}_n\left[\psi_{\hat{\theta}_1(s_k)}(Y) \mid S = s_k, D=1, G=O\right] = 0
 	$$
@@ -414,7 +411,7 @@ interest and state the key assumption which point identifies them, which are giv
 	Now, with estimators of $\theta_1$ and $\zeta_1$ at hand, one can easily construct estimators for $\tau$. One caveat here is that if $S$ is continuously distributed, the above procedure will fail since the event $\{S = s\}$ has probability 0. One could extend the current argument to deal with continuous $S$, but that is beyond the scope of this paper.
 	
 	\subsection{Method of Moment Estimator}
-	Note that, although $\psi_x$ and $\phi_x$ themselves are not differentiable everywhere (actually, only at one point $x$), after taking conditional expectation, the function is smooth enough. Too see this, consider the following simple quantity: 
+	Note that although $\psi_x$ and $\phi_x$ themselves are not differentiable everywhere (actually, only at one point $x$), after taking conditional expectation, the function is smooth enough. Too see this, consider the following simple example: 
 		\begin{align*}
 		\frac{\partial}{\partial \theta}\Ep[\psi_{\theta}(Y(1))] & = \frac{\partial}{\partial \theta} \Ep[(Y(1) - \theta)_+ - K (Y(1) - \theta)_-].
 		\end{align*}
