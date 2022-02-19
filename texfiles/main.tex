@@ -103,14 +103,17 @@
 	\maketitle
 	
 	\begin{abstract}
-	\textcite{athey2020combining} proposed a data combination approach to identify the effect of treatment on long term outcome, where they rely on several key assumptions including unconfoundedness in an experimental sample, comparability of the experimental sample and an observational sample, and latent unconfoundedness in the observational sample. This paper shows how to construct bounds for the effect of treatment on long-term outcome when we only have partial (latent) unconfoundedness, using technique in \textcite{yadlowsky2018bounds}, which is based on a likelihood ratio restriction. Estimators for bounds and accompanied inference procedure are also shown. Finally, I provide examples involving both simulated and real data to illustrate the accuracy of confidence interval and its practical significance.
+	\textcite{athey2020combining} proposed a data combination approach to identify the effect of treatment on long term outcome, which relies on several key assumptions including unconfoundedness in an experimental sample, comparability of the experimental sample and an observational sample, and latent unconfoundedness in the observational sample. This paper shows how to construct bounds for the effect of treatment on long-term outcome when the latent-unconfoundedness and sample comparability assumptions are weakened. For chosen sensitivity parameters, I derived an identified set (an interval characterizing the lower bound and upper bound for the ATE) for the average long-term treatment effect in the observational sample, which is often the parameter of interest in policy making.
+    They have simple and analytical characterization, and can be derived using a change-of-measure technique from \textcite{yadlowsky2018bounds}. 
+    I provide an MM(Method of Moment) Estimator for the bounds, and an inference procedure that ensures valid coverage of the long-term treatment effects.
+    Finally, I provide an example involving simulated data to illustrate the accuracy of estimation and inference procedure and its practical significance.
 	\end{abstract}
 
     \section{INTRODUCTION}
     
     Estimation of the long-term effects of a policy/treatment is crucial since it lays the foundation for many real-world policy decisions, such as class size adjustment and poverty alleviation. One challenge in estimation of the long-term effect is that it's often hard to use a randomized experiment to study the effect directly due to the delay of response. Recently, \textcite{athey2020combining} show that a combination of short-term experimental sample and long-term observational sample can help achieve identification (and also estimation of) long-term effects. In the experimental data, the researcher observes the randomized treatment and the short-term outcome($S$). In the observational data, the researcher observes the confounded treatment, short-term outcome($S$), and the long-term outcome($Y$). The key assumptions for identifications are as follows: treatment in the experimental sample is unconfounded, treatment in the observational sample is latent-unconfounded, and the two samples are "comparable"--which is often referred to as external validity in the literature.
 	
-	However, in real-world applications, the above assumptions may not hold. Altough the unconfoundedness assumption in the experimental sample can be ensured if a randomization scheme is used, the other two assumptions suffer from a variety of problems. For example, the latent unconfoundedness assumption can fail when there are more independent confounding factors affecting the treatment assignment process than independent short-term outcome variables\footnote{See \textcite{athey2020combining} for a discussion.}. The sample comparability condition, on the other hand, can fail if the experimental sample is not representative of the target distribution, even after we control for covariates, which is usually referred to as selection bias in the literature. Moreover, it is widely known that without additional data or restrictions on the model, these assumptions are non-refutable. Namely, the data alone cannot tell us whether the assumptions are true. 
+	However, in real-world applications, the above assumptions may not hold. Although the unconfoundedness assumption in the experimental sample can be ensured if a randomization scheme is used, the other two assumptions suffer from a variety of problems. For example, the latent unconfoundedness assumption can fail when there are more independent confounding factors affecting the treatment assignment process than independent short-term outcome variables\footnote{See \textcite{athey2020combining} for a discussion.}. The sample comparability condition, on the other hand, can fail if the experimental sample is not representative of the target distribution, even after we control for covariates, which is usually referred to as selection bias in the literature. Moreover, it is widely known that without additional data or restrictions on the model, these assumptions are non-refutable. Namely, the data alone cannot tell us whether the assumptions are true. 
 	
 	Nonetheless, researchers interested in estimation of long-term treatment effects may want to assess how sensitive their results are to failures of these assumptions. Recent work by \textcite{masten2018identification, yadlowsky2018bounds, kallus2018confounding} each develops a nonparametric relaxation of the unconfoundedness assumption, which does not rely on auxiliary functional form or parametric distribution assumptions\footnote{Until recently, most approaches rely on strong auxiliary assumptions such as linearity of model or normality of the confounding factor, which can be undesirable because these auxiliary assumptions themselves is not needed for identification. }. Usually, the sensitivity analysis will produce a set of bounds corresponding to different choice of sensitivity parameters, and therefore allow researchers to evaluate how robust their results are to slight or severe violation of assumptions. However, the current methods cannot be directly applied to the estimation of long-term treatment effects because of the presence of multiple assumptions. The propagation of sensitivity is a new phenomena when we consider the relaxation of multiple assumptions. We might be interested in knowing how sensitive the results are to the relaxation of the latent unconfoundedness assumption when we've already relaxed the sample comparability assumption. Therefore, it is necessary to take into consideration the sensitivity parameter of the sample comparability assumption, while assessing sensitivity of the result to the latent unconfoundedness assumption. 
     %One possible extension to existing sensitivity analysis is to accommodate relaxation of multiple assumptions, which can be directly used to assess the sensitivity of results to the above collection of assumptions. 
@@ -226,7 +229,7 @@ interest and state the key assumption which point identifies them, which are giv
 	    
 	%	Equivalence of $(a)$ and $(b)$ is given in \textcite{rosenbaum2002overt}. Equivalence of $(b) \text{ and } (c)$ is given in \textcite{yadlowsky2018bounds}.
 	%\end{proof}
-	Intuitively, $K-$confoundedness allows the assignment mechanism to depend on the unmeasured confounder to a certain degree characterized by sensitivity parameter $K$. When $K = 1$, the dependence is killed and the latent-unconfoundedness assumption is restored. Otherwise, the log-odd ratio of treatment assignment can be expressed as a function of a bounded tranformation of the unmeasured confounder($U$), even after controlling for short-term outcome $S(1)$. Similarly, if we interpret $G_i$ as an assignment, and $S_i(d)$ as the target outcome, we can provide a set of equivalent conditions for $H-$comparability.
+	Intuitively, $K-$confoundedness allows the assignment mechanism to depend on the unmeasured confounder to a certain degree characterized by sensitivity parameter $K$. When $K = 1$, the dependence is killed and the latent-unconfoundedness assumption is restored. Otherwise, the log-odd ratio of treatment assignment can be expressed as a function of a bounded transformation of the unmeasured confounder($U$), even after controlling for short-term outcome $S(1)$. Similarly, if we interpret $G_i$ as an assignment, and $S_i(d)$ as the target outcome, we can provide a set of equivalent conditions for $H-$comparability.
 	
 	\section{IDENTIFICATION}
 	
@@ -522,8 +525,8 @@ interest and state the key assumption which point identifies them, which are giv
     \begin{threeparttable}
     \caption{Monte Carlo Results: $B = 2000, \tau = 1, K = H = 1.2$}
         \begin{tabular}{|c|c|c|c|c|c|}
-        \hline $\mathrm{n}$ & $\widehat{\sigma}^{-}$ & \text {Std. dev. of } $\widehat{\tau}^{-}$ & $\widehat{\tau}^{+}$ & \text {Std. dev. of } $\widehat{\tau}^{+}$ & \text {Coverage } \\
-        \hline 500 & 0.803 & 0.71 & 2.080 & 0.716& 0.9895 \\
+        \hline $\mathrm{n}$ & $\widehat{\tau}^{-}$ & \text {Std. dev. of } $\widehat{\tau}^{-}$ & $\widehat{\tau}^{+}$ & \text {Std. dev. of } $\widehat{\tau}^{+}$ & \text {Coverage } \\
+        \hline 500 & 0.803 & 0.710 & 2.080 & 0.716& 0.9895 \\
         1000 & 0.796 & 0.480 & 2.058 & 0.484 & 0.9945 \\
         2000 & 0.802 & 0.363 & 2.055 & 0.365 & 0.9950 \\
         \hline
@@ -548,7 +551,7 @@ interest and state the key assumption which point identifies them, which are giv
 
   There are still several remaining questions. 
   First, although the identification result can be directly extended to the cases where there are covariates, the current estimation procedure only works for the case where the cardinality of covariates is finite. Estimation in the presence of continuous covariates is a further research question. Second, unlike the method proposed in \textcite{masten2018identification}, 
-  the current procedure is useful for deriving identified sets for ATE, but is not as useful when one is interested in quantile treatment effects. Whether one can use the same idea to derive bounds on quantile treatment effects is also a helpful addition to current work. Finally, in this paper, the issue of correlated confounders is only briefly discussed and not addressed. In real-world applications, confounders for latent unconfoundedness and sample comparability could often be correlated and the researcher may have a priori knowledge about the correlation between confounders. In this case, it's desirable to have a procedure of assessing sensitivity that respects this piece of additional information. 
+  the current procedure is useful for deriving identified sets for ATE, but is not as useful when one is interested in quantile treatment effects. Whether one can use the same idea to derive bounds on quantile treatment effects is also a helpful addition to current work. Finally, in this paper, the issue of correlated confounders is only briefly discussed and not addressed. In real-world applications, confounders for latent unconfoundedness and sample comparability could often be correlated and the researcher may have \textit{a priori} knowledge about the correlation between confounders. In this case, it's desirable to have a procedure of assessing sensitivity that take into account this piece of additional information. 
     
 	\medskip
 	
@@ -636,7 +639,7 @@ interest and state the key assumption which point identifies them, which are giv
 	\end{restatable}
 	
 	\begin{proof}
-		For each single $s_k$, the consistency follows from the fact that the following map is strictly increasing and continous in $x$:
+		For each single $s_k$, the consistency follows from the fact that the following map is strictly increasing and continuous in $x$:
 		$$\psi_x(y) = (y - x)_+ - K (y - x)_-.$$
 		The $Z$-estimator is given by $\Ep_n[\psi_{\hat{\theta}(s)}(Y(1)) \mid S(1) = s, D = 1, G = O] = 0$, which, by Lemma 5.10 in \textcite{van2000asymptotic}, gives an consistent estimator for $\theta_1(s)$.
 		
@@ -648,7 +651,7 @@ interest and state the key assumption which point identifies them, which are giv
 		\begin{equation*}
 		\mathbb{E}_n\left[ \phi_{\hat{\zeta}_1}(\hat{\theta}_1(S(1)))\mid D=1, G = E\right] = 0.
 		\end{equation*}
-		Note that $\phi_{x}(y)$ is uniformly continous in each argument when we fix the other one. By continous mapping theorem,
+		Note that $\phi_{x}(y)$ is uniformly continous in each argument when we fix the other one. By continuous mapping theorem,
 		\begin{equation*}
 		\mathbb{E}_n\left[ \phi_{\hat{\zeta}_1}(\theta_1(S(1)))\mid D=1, G = E\right] = \littleop(1).
 		\end{equation*}
@@ -678,7 +681,7 @@ interest and state the key assumption which point identifies them, which are giv
 		\Ep[(1-G)\Indc(S(1) = s_k) D \psi_{\theta_{1,k}}(Y(1))] & = 0\\
 		\Ep[(G \sum_{j =1}^k \Indc(S(1) = s_j) D \phi_{\zeta_1}(\theta_{1,j})] & = 0
 		\end{align*}
-		This is a just identified system with noncorrelated moments.
+		This is a just identified system with non-correlated moments.
 		Let's first focus on the first $k$ equations.
 		
 		To prove asymptotic normality, I resort to Lemma 5.21 in \textcite{van2000asymptotic}. We need to verify all the conditions needed. The first one is Lipschitz continuity. This follows naturally since $\psi_{\theta}(y)$ is $K-$Lipschitz continuous. The constant function is certainly integrable, so we are done. The second one is differentiability. For the first $k$ equations, $P\psi_{\theta}$ can be shown to be differentiable. Too see this, consider the following simple demonstration: 
