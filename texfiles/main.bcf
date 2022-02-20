@@ -2020,22 +2020,26 @@
     <bcf:citekey order="20">imbens2000role</bcf:citekey>
     <bcf:citekey order="21">athey2020combining</bcf:citekey>
     <bcf:citekey order="22">athey2020combining</bcf:citekey>
-    <bcf:citekey order="23">yadlowsky2018bounds</bcf:citekey>
+    <bcf:citekey order="23">athey2020combining</bcf:citekey>
     <bcf:citekey order="24">yadlowsky2018bounds</bcf:citekey>
+    <bcf:citekey order="25">rosenbaum2002overt</bcf:citekey>
+    <bcf:citekey order="25">masten2018identification</bcf:citekey>
     <bcf:citekey order="25">yadlowsky2018bounds</bcf:citekey>
-    <bcf:citekey order="26">van2000asymptotic</bcf:citekey>
-    <bcf:citekey order="27">andrews1994asymptotics</bcf:citekey>
-    <bcf:citekey order="28">Andrews2007InferenceFP</bcf:citekey>
-    <bcf:citekey order="28">stoye2020simple</bcf:citekey>
-    <bcf:citekey order="29">masten2018identification</bcf:citekey>
+    <bcf:citekey order="26">yadlowsky2018bounds</bcf:citekey>
+    <bcf:citekey order="27">yadlowsky2018bounds</bcf:citekey>
+    <bcf:citekey order="28">van2000asymptotic</bcf:citekey>
+    <bcf:citekey order="29">andrews1994asymptotics</bcf:citekey>
+    <bcf:citekey order="30">Andrews2007InferenceFP</bcf:citekey>
+    <bcf:citekey order="30">stoye2020simple</bcf:citekey>
+    <bcf:citekey order="31">masten2018identification</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
-    <bcf:citekey order="30">yadlowsky2018bounds</bcf:citekey>
-    <bcf:citekey order="31">luenberger1997optimization</bcf:citekey>
     <bcf:citekey order="32">yadlowsky2018bounds</bcf:citekey>
-    <bcf:citekey order="33">van2000asymptotic</bcf:citekey>
-    <bcf:citekey order="34">van2000asymptotic</bcf:citekey>
+    <bcf:citekey order="33">luenberger1997optimization</bcf:citekey>
+    <bcf:citekey order="34">yadlowsky2018bounds</bcf:citekey>
     <bcf:citekey order="35">van2000asymptotic</bcf:citekey>
     <bcf:citekey order="36">van2000asymptotic</bcf:citekey>
+    <bcf:citekey order="37">van2000asymptotic</bcf:citekey>
+    <bcf:citekey order="38">van2000asymptotic</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
