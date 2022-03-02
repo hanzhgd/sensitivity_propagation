@@ -1,0 +1,423 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{andrews1994asymptotics}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=819f147f61363909f87ab9d5fdf6c835}{%
+           family={Andrews},
+           familyi={A\bibinitperiod},
+           given={Donald\bibnamedelima WK},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{819f147f61363909f87ab9d5fdf6c835}
+      \strng{fullhash}{819f147f61363909f87ab9d5fdf6c835}
+      \strng{bibnamehash}{819f147f61363909f87ab9d5fdf6c835}
+      \strng{authorbibnamehash}{819f147f61363909f87ab9d5fdf6c835}
+      \strng{authornamehash}{819f147f61363909f87ab9d5fdf6c835}
+      \strng{authorfullhash}{819f147f61363909f87ab9d5fdf6c835}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica: Journal of the Econometric Society}
+      \field{title}{Asymptotics for semiparametric econometric models via stochastic equicontinuity}
+      \field{year}{1994}
+      \field{pages}{43\bibrangedash 72}
+      \range{pages}{30}
+    \endentry
+    \entry{athey2020combining}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=cab7b4f39472e6c01dc0fc30a32c6d89}{%
+           family={Athey},
+           familyi={A\bibinitperiod},
+           given={Susan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7a853740afbc544905334cf607b3cd51}{%
+           family={Chetty},
+           familyi={C\bibinitperiod},
+           given={Raj},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f74fd63923a56fa58b8687fdf1cc7ff2}{%
+           family={Imbens},
+           familyi={I\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f098ac3b1859d4631f005cd52d3bfebd}
+      \strng{fullhash}{f098ac3b1859d4631f005cd52d3bfebd}
+      \strng{bibnamehash}{f098ac3b1859d4631f005cd52d3bfebd}
+      \strng{authorbibnamehash}{f098ac3b1859d4631f005cd52d3bfebd}
+      \strng{authornamehash}{f098ac3b1859d4631f005cd52d3bfebd}
+      \strng{authorfullhash}{f098ac3b1859d4631f005cd52d3bfebd}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2006.09676}
+      \field{title}{Combining experimental and observational data to estimate treatment effects on long term outcomes}
+      \field{year}{2020}
+    \endentry
+    \entry{colnet2020causal}{article}{}
+      \name{author}{9}{}{%
+        {{uniquename=0,uniquepart=base,hash=0ac11d9be1f22072ca17be17d0460eaf}{%
+           family={Colnet},
+           familyi={C\bibinitperiod},
+           given={B{é}n{é}dicte},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=93e78b1f8cab280863f239b332002e3e}{%
+           family={Mayer},
+           familyi={M\bibinitperiod},
+           given={Imke},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=deff38b3f2a543d7745a0b04b8d1f0b8}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Guanhua},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=33970f831d6f9e48dc3297aac580501c}{%
+           family={Dieng},
+           familyi={D\bibinitperiod},
+           given={Awa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=51f4f854e412019bcc160a34d6c73799}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ruohong},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cfa3239dded54488f9a82a5718d5b927}{%
+           family={Varoquaux},
+           familyi={V\bibinitperiod},
+           given={Ga{ë}l},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0df2e0c86d89bfaf4f3726c0bc382d4f}{%
+           family={Vert},
+           familyi={V\bibinitperiod},
+           given={Jean-Philippe},
+           giveni={J\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8939f2a4c4e9861e34f1590f4e18d592}{%
+           family={Josse},
+           familyi={J\bibinitperiod},
+           given={Julie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=625adcd640f37c51b209b82b979454e9}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Shu},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dcc0a40d6793d9d3c61d9cf1cc1b6d5e}
+      \strng{fullhash}{9a77f1badb29b9809d89597deff082fb}
+      \strng{bibnamehash}{dcc0a40d6793d9d3c61d9cf1cc1b6d5e}
+      \strng{authorbibnamehash}{dcc0a40d6793d9d3c61d9cf1cc1b6d5e}
+      \strng{authornamehash}{dcc0a40d6793d9d3c61d9cf1cc1b6d5e}
+      \strng{authorfullhash}{9a77f1badb29b9809d89597deff082fb}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2011.08047}
+      \field{title}{Causal inference methods for combining randomized trials and observational studies: a review}
+      \field{year}{2020}
+    \endentry
+    \entry{dynarski2018closing}{report}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=157d6d58dd9a1ee4ed3ffeb04cce95c0}{%
+           family={Dynarski},
+           familyi={D\bibinitperiod},
+           given={Susan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5229bfe17208d59ee67e03043e64f69a}{%
+           family={Libassi},
+           familyi={L\bibinitperiod},
+           given={CJ},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d964d5571c41fa4f0252112a76db10d0}{%
+           family={Michelmore},
+           familyi={M\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=164f5e0dd938c6333194c675cff44528}{%
+           family={Owen},
+           familyi={O\bibinitperiod},
+           given={Stephanie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{ffed501b89701abaed027a0863453511}
+      \strng{fullhash}{81e6a69f70c15be4acf2e2f3c2e6ee94}
+      \strng{bibnamehash}{ffed501b89701abaed027a0863453511}
+      \strng{authorbibnamehash}{ffed501b89701abaed027a0863453511}
+      \strng{authornamehash}{ffed501b89701abaed027a0863453511}
+      \strng{authorfullhash}{81e6a69f70c15be4acf2e2f3c2e6ee94}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Closing the gap: The effect of a targeted, tuition-free promise on college choices of high-achieving, low-income students}
+      \field{type}{techreport}
+      \field{year}{2018}
+    \endentry
+    \entry{ghassami2022combining}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=79f41e66efb4d76d7deb879cbcfb345c}{%
+           family={Ghassami},
+           familyi={G\bibinitperiod},
+           given={AmirEmad},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9ebb753339d5d0ba2ebfe33a9c7bbb87}{%
+           family={Shpitser},
+           familyi={S\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ebd85d0833b9d1d2d74cbe7174060954}{%
+           family={Tchetgen},
+           familyi={T\bibinitperiod},
+           given={Eric\bibnamedelima Tchetgen},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2405897336303ab999e57a1ed06d69a7}
+      \strng{fullhash}{2405897336303ab999e57a1ed06d69a7}
+      \strng{bibnamehash}{2405897336303ab999e57a1ed06d69a7}
+      \strng{authorbibnamehash}{2405897336303ab999e57a1ed06d69a7}
+      \strng{authornamehash}{2405897336303ab999e57a1ed06d69a7}
+      \strng{authorfullhash}{2405897336303ab999e57a1ed06d69a7}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2201.10743}
+      \field{title}{Combining Experimental and Observational Data for Identification of Long-Term Causal Effects}
+      \field{year}{2022}
+    \endentry
+    \entry{huang2021leveraging}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=dc5c326788271f5d526240e25a88dfa0}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Melody},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3458ba5c0d9e560fac615b3040d8e6cd}{%
+           family={Egami},
+           familyi={E\bibinitperiod},
+           given={Naoki},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a17a3cf43f990c88df7fc3b5db193a04}{%
+           family={Hartman},
+           familyi={H\bibinitperiod},
+           given={Erin},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2c89ca25092a0331d9183226d8b0cd66}{%
+           family={Miratrix},
+           familyi={M\bibinitperiod},
+           given={Luke},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1d607453f2640adbd8a3c0421c631423}
+      \strng{fullhash}{cfc9404c6eb7e8cab887461f9d4786ca}
+      \strng{bibnamehash}{1d607453f2640adbd8a3c0421c631423}
+      \strng{authorbibnamehash}{1d607453f2640adbd8a3c0421c631423}
+      \strng{authornamehash}{1d607453f2640adbd8a3c0421c631423}
+      \strng{authorfullhash}{cfc9404c6eb7e8cab887461f9d4786ca}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2111.01357}
+      \field{title}{Leveraging Population Outcomes to Improve the Generalization of Experimental Results}
+      \field{year}{2021}
+    \endentry
+    \entry{masten2018identification}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=3afd6d9f7f1f23eb27ab051560b41d66}{%
+           family={Masten},
+           familyi={M\bibinitperiod},
+           given={Matthew\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a507f5115125f680639c5fe1ddc15c51}{%
+           family={Poirier},
+           familyi={P\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{942db81796c93f755755e235df884ead}
+      \strng{fullhash}{942db81796c93f755755e235df884ead}
+      \strng{bibnamehash}{942db81796c93f755755e235df884ead}
+      \strng{authorbibnamehash}{942db81796c93f755755e235df884ead}
+      \strng{authornamehash}{942db81796c93f755755e235df884ead}
+      \strng{authorfullhash}{942db81796c93f755755e235df884ead}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{1}
+      \field{title}{Identification of treatment effects under conditional partial independence}
+      \field{volume}{86}
+      \field{year}{2018}
+      \field{pages}{317\bibrangedash 351}
+      \range{pages}{35}
+    \endentry
+    \entry{mckenzie2017effective}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=eb23ea198dc9145fc0b0954b94e8aba9}{%
+           family={McKenzie},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{eb23ea198dc9145fc0b0954b94e8aba9}
+      \strng{fullhash}{eb23ea198dc9145fc0b0954b94e8aba9}
+      \strng{bibnamehash}{eb23ea198dc9145fc0b0954b94e8aba9}
+      \strng{authorbibnamehash}{eb23ea198dc9145fc0b0954b94e8aba9}
+      \strng{authornamehash}{eb23ea198dc9145fc0b0954b94e8aba9}
+      \strng{authorfullhash}{eb23ea198dc9145fc0b0954b94e8aba9}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The World Bank Research Observer}
+      \field{number}{2}
+      \field{title}{How effective are active labor market policies in developing countries? a critical review of recent evidence}
+      \field{volume}{32}
+      \field{year}{2017}
+      \field{pages}{127\bibrangedash 154}
+      \range{pages}{28}
+    \endentry
+    \entry{rosenbaum2002overt}{incollection}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2619036f349e499ca578ec1a7ebb3a46}{%
+           family={Rosenbaum},
+           familyi={R\bibinitperiod},
+           given={Paul\bibnamedelima R},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2619036f349e499ca578ec1a7ebb3a46}
+      \strng{fullhash}{2619036f349e499ca578ec1a7ebb3a46}
+      \strng{bibnamehash}{2619036f349e499ca578ec1a7ebb3a46}
+      \strng{authorbibnamehash}{2619036f349e499ca578ec1a7ebb3a46}
+      \strng{authornamehash}{2619036f349e499ca578ec1a7ebb3a46}
+      \strng{authorfullhash}{2619036f349e499ca578ec1a7ebb3a46}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Observational studies}
+      \field{title}{Overt bias in observational studies}
+      \field{year}{2002}
+      \field{pages}{71\bibrangedash 104}
+      \range{pages}{34}
+    \endentry
+    \entry{rubin1974estimating}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=49a367b6280de8a239f8bbdd573f996f}{%
+           family={Rubin},
+           familyi={R\bibinitperiod},
+           given={Donald\bibnamedelima B},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{49a367b6280de8a239f8bbdd573f996f}
+      \strng{fullhash}{49a367b6280de8a239f8bbdd573f996f}
+      \strng{bibnamehash}{49a367b6280de8a239f8bbdd573f996f}
+      \strng{authorbibnamehash}{49a367b6280de8a239f8bbdd573f996f}
+      \strng{authornamehash}{49a367b6280de8a239f8bbdd573f996f}
+      \strng{authorfullhash}{49a367b6280de8a239f8bbdd573f996f}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of educational Psychology}
+      \field{number}{5}
+      \field{title}{Estimating causal effects of treatments in randomized and nonrandomized studies.}
+      \field{volume}{66}
+      \field{year}{1974}
+      \field{pages}{688}
+      \range{pages}{1}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

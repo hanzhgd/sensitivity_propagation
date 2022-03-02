@@ -19,6 +19,39 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{allcott2015site}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=cc99b38ced482f8ce08a3d71368c14d4}{%
+           family={Allcott},
+           familyi={A\bibinitperiod},
+           given={Hunt},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{cc99b38ced482f8ce08a3d71368c14d4}
+      \strng{fullhash}{cc99b38ced482f8ce08a3d71368c14d4}
+      \strng{bibnamehash}{cc99b38ced482f8ce08a3d71368c14d4}
+      \strng{authorbibnamehash}{cc99b38ced482f8ce08a3d71368c14d4}
+      \strng{authornamehash}{cc99b38ced482f8ce08a3d71368c14d4}
+      \strng{authorfullhash}{cc99b38ced482f8ce08a3d71368c14d4}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Quarterly Journal of Economics}
+      \field{number}{3}
+      \field{title}{Site selection bias in program evaluation}
+      \field{volume}{130}
+      \field{year}{2015}
+      \true{nocite}
+      \field{pages}{1117\bibrangedash 1165}
+      \range{pages}{49}
+    \endentry
     \entry{Andrews2007InferenceFP}{article}{}
       \name{author}{2}{}{%
         {{uniquename=1,uniquepart=given,hash=819f147f61363909f87ab9d5fdf6c835}{%
@@ -167,6 +200,45 @@
       \field{year}{2019}
       \true{nocite}
     \endentry
+    \entry{bareinboim2016causal}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=75407c2a9a98f89ca65c2d1ad7b33b09}{%
+           family={Bareinboim},
+           familyi={B\bibinitperiod},
+           given={Elias},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=809f695b398afbb54b544c49e8d1bbbb}{%
+           family={Pearl},
+           familyi={P\bibinitperiod},
+           given={Judea},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {National Acad Sciences}%
+      }
+      \strng{namehash}{d6a58b4ce81af88102cf608be3bf098d}
+      \strng{fullhash}{d6a58b4ce81af88102cf608be3bf098d}
+      \strng{bibnamehash}{d6a58b4ce81af88102cf608be3bf098d}
+      \strng{authorbibnamehash}{d6a58b4ce81af88102cf608be3bf098d}
+      \strng{authornamehash}{d6a58b4ce81af88102cf608be3bf098d}
+      \strng{authorfullhash}{d6a58b4ce81af88102cf608be3bf098d}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{number}{27}
+      \field{title}{Causal inference and the data-fusion problem}
+      \field{volume}{113}
+      \field{year}{2016}
+      \true{nocite}
+      \field{pages}{7345\bibrangedash 7352}
+      \range{pages}{8}
+    \endentry
     \entry{bennett2019policy}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=ce06b176cf03957a91d812c1a41e9e90}{%
@@ -229,6 +301,104 @@
       \field{journaltitle}{arXiv preprint arXiv:2107.14405}
       \field{title}{Semiparametric Estimation of Long-Term Treatment Effects}
       \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{dal2021information}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=20dd23fe0c9b7be2fb9fe4f721110de3}{%
+           family={Dal\bibnamedelima B{ó}},
+           familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Ernesto},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=80dec96f966db1f196927d2f0a30e2bf}{%
+           family={Finan},
+           familyi={F\bibinitperiod},
+           given={Frederico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2351d07ee6350751c8434f6dc95ef9f8}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Nicholas\bibnamedelima Y},
+           giveni={N\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9e642060c6e694b33661983162ec38e3}{%
+           family={Schechter},
+           familyi={S\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{c7dde5309b21970d2b23e285954c8d96}
+      \strng{fullhash}{a32becadf916f259d677d42e4a54d0aa}
+      \strng{bibnamehash}{c7dde5309b21970d2b23e285954c8d96}
+      \strng{authorbibnamehash}{c7dde5309b21970d2b23e285954c8d96}
+      \strng{authornamehash}{c7dde5309b21970d2b23e285954c8d96}
+      \strng{authorfullhash}{a32becadf916f259d677d42e4a54d0aa}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{2}
+      \field{title}{Information Technology and Government Decentralization: Experimental Evidence from Paraguay}
+      \field{volume}{89}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{677\bibrangedash 701}
+      \range{pages}{25}
+    \endentry
+    \entry{dynarski2018closing}{report}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=157d6d58dd9a1ee4ed3ffeb04cce95c0}{%
+           family={Dynarski},
+           familyi={D\bibinitperiod},
+           given={Susan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5229bfe17208d59ee67e03043e64f69a}{%
+           family={Libassi},
+           familyi={L\bibinitperiod},
+           given={CJ},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d964d5571c41fa4f0252112a76db10d0}{%
+           family={Michelmore},
+           familyi={M\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=164f5e0dd938c6333194c675cff44528}{%
+           family={Owen},
+           familyi={O\bibinitperiod},
+           given={Stephanie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{ffed501b89701abaed027a0863453511}
+      \strng{fullhash}{81e6a69f70c15be4acf2e2f3c2e6ee94}
+      \strng{bibnamehash}{ffed501b89701abaed027a0863453511}
+      \strng{authorbibnamehash}{ffed501b89701abaed027a0863453511}
+      \strng{authornamehash}{ffed501b89701abaed027a0863453511}
+      \strng{authorfullhash}{81e6a69f70c15be4acf2e2f3c2e6ee94}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Closing the gap: The effect of a targeted, tuition-free promise on college choices of high-achieving, low-income students}
+      \field{type}{techreport}
+      \field{year}{2018}
       \true{nocite}
     \endentry
     \entry{fan2010sharp}{article}{}
@@ -353,6 +523,70 @@
       \true{nocite}
       \field{pages}{811\bibrangedash 822}
       \range{pages}{12}
+    \endentry
+    \entry{gechter2016generalizing}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2bddd2ba508eb7b5d4b483352e3b2914}{%
+           family={Gechter},
+           familyi={G\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Departement of Economics, Boston University}%
+      }
+      \strng{namehash}{2bddd2ba508eb7b5d4b483352e3b2914}
+      \strng{fullhash}{2bddd2ba508eb7b5d4b483352e3b2914}
+      \strng{bibnamehash}{2bddd2ba508eb7b5d4b483352e3b2914}
+      \strng{authorbibnamehash}{2bddd2ba508eb7b5d4b483352e3b2914}
+      \strng{authornamehash}{2bddd2ba508eb7b5d4b483352e3b2914}
+      \strng{authorfullhash}{2bddd2ba508eb7b5d4b483352e3b2914}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Working Paper}
+      \field{title}{Generalizing the Results from Social Experiments: Theory and Evidence}
+      \field{year}{2016}
+      \true{nocite}
+    \endentry
+    \entry{gechter2021combining}{report}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=2bddd2ba508eb7b5d4b483352e3b2914}{%
+           family={Gechter},
+           familyi={G\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6fd3870417f4a93a7b8a4dad95b51c37}{%
+           family={Meager},
+           familyi={M\bibinitperiod},
+           given={Rachael},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Mimeo}%
+      }
+      \strng{namehash}{c89d77221fa659d2bd673beab9de3400}
+      \strng{fullhash}{c89d77221fa659d2bd673beab9de3400}
+      \strng{bibnamehash}{c89d77221fa659d2bd673beab9de3400}
+      \strng{authorbibnamehash}{c89d77221fa659d2bd673beab9de3400}
+      \strng{authornamehash}{c89d77221fa659d2bd673beab9de3400}
+      \strng{authorfullhash}{c89d77221fa659d2bd673beab9de3400}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Combining Experimental and Observational Studies in Meta-Analysis: A Mutual Debiasing Approach.”}
+      \field{type}{techreport}
+      \field{year}{2021}
+      \true{nocite}
     \endentry
     \entry{hwang2021bounding}{article}{}
       \name{author}{1}{}{%
@@ -629,6 +863,45 @@
       \field{year}{2020}
       \true{nocite}
     \endentry
+    \entry{pearl2014external}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=809f695b398afbb54b544c49e8d1bbbb}{%
+           family={Pearl},
+           familyi={P\bibinitperiod},
+           given={Judea},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=75407c2a9a98f89ca65c2d1ad7b33b09}{%
+           family={Bareinboim},
+           familyi={B\bibinitperiod},
+           given={Elias},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{5e228f34efd955a1a645174944209c3d}
+      \strng{fullhash}{5e228f34efd955a1a645174944209c3d}
+      \strng{bibnamehash}{5e228f34efd955a1a645174944209c3d}
+      \strng{authorbibnamehash}{5e228f34efd955a1a645174944209c3d}
+      \strng{authornamehash}{5e228f34efd955a1a645174944209c3d}
+      \strng{authorfullhash}{5e228f34efd955a1a645174944209c3d}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statistical Science}
+      \field{number}{4}
+      \field{title}{External validity: From do-calculus to transportability across populations}
+      \field{volume}{29}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{579\bibrangedash 595}
+      \range{pages}{17}
+    \endentry
     \entry{rosenbaum2002overt}{incollection}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=2619036f349e499ca578ec1a7ebb3a46}{%
@@ -722,6 +995,46 @@
       \verb{eprint}
       \verb 2010.10484
       \endverb
+    \endentry
+    \entry{tanner2015later}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=a2cb04fdb92106eae6a108ecca68d7ba}{%
+           family={Tanner},
+           familyi={T\bibinitperiod},
+           given={Jeffery\bibnamedelima C},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d4403e89b6f27141acac253510289181}{%
+           family={Candland},
+           familyi={C\bibinitperiod},
+           given={Tara},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=de8d77cea23e433e63658293bf9cbc47}{%
+           family={Odden},
+           familyi={O\bibinitperiod},
+           given={Whitney\bibnamedelima S},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{679b2434516ec767e0c0347a63ea0359}
+      \strng{fullhash}{679b2434516ec767e0c0347a63ea0359}
+      \strng{bibnamehash}{679b2434516ec767e0c0347a63ea0359}
+      \strng{authorbibnamehash}{679b2434516ec767e0c0347a63ea0359}
+      \strng{authornamehash}{679b2434516ec767e0c0347a63ea0359}
+      \strng{authorfullhash}{679b2434516ec767e0c0347a63ea0359}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Washington: Independent Evaluation Group, World Bank Group}
+      \field{title}{Later impacts of early childhood interventions: a systematic review}
+      \field{year}{2015}
+      \true{nocite}
     \endentry
     \entry{van2000asymptotic}{book}{}
       \name{author}{1}{}{%

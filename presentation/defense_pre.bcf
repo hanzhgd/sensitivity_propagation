@@ -1996,58 +1996,16 @@
     <bcf:datasource type="file" datatype="bibtex">citation.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">athey2020combining</bcf:citekey>
-    <bcf:citekey order="2">yadlowsky2018bounds</bcf:citekey>
-    <bcf:citekey order="3">dynarski2018closing</bcf:citekey>
+    <bcf:citekey order="1">dynarski2018closing</bcf:citekey>
+    <bcf:citekey order="2">mckenzie2017effective</bcf:citekey>
     <bcf:citekey order="3">athey2020combining</bcf:citekey>
-    <bcf:citekey order="3">dal2021information</bcf:citekey>
-    <bcf:citekey order="4">athey2020combining</bcf:citekey>
-    <bcf:citekey order="5">athey2020combining</bcf:citekey>
-    <bcf:citekey order="6">masten2018identification</bcf:citekey>
-    <bcf:citekey order="6">yadlowsky2018bounds</bcf:citekey>
-    <bcf:citekey order="6">kallus2018confounding</bcf:citekey>
-    <bcf:citekey order="7">athey2020combining</bcf:citekey>
-    <bcf:citekey order="8">yadlowsky2018bounds</bcf:citekey>
-    <bcf:citekey order="9">athey2020combining</bcf:citekey>
-    <bcf:citekey order="10">athey2019surrogate</bcf:citekey>
-    <bcf:citekey order="11">chen2021semiparametric</bcf:citekey>
-    <bcf:citekey order="12">masten2018identification</bcf:citekey>
-    <bcf:citekey order="13">rosenbaum2002overt</bcf:citekey>
-    <bcf:citekey order="14">yadlowsky2018bounds</bcf:citekey>
-    <bcf:citekey order="15">rosenbaum2002overt</bcf:citekey>
-    <bcf:citekey order="16">pearl2014external</bcf:citekey>
-    <bcf:citekey order="16">bareinboim2016causal</bcf:citekey>
-    <bcf:citekey order="17">allcott2015site</bcf:citekey>
-    <bcf:citekey order="17">gechter2016generalizing</bcf:citekey>
-    <bcf:citekey order="17">gechter2021combining</bcf:citekey>
-    <bcf:citekey order="18">masten2021salvaging</bcf:citekey>
-    <bcf:citekey order="19">athey2020combining</bcf:citekey>
-    <bcf:citekey order="20">athey2020combining</bcf:citekey>
-    <bcf:citekey order="21">rubin1974estimating</bcf:citekey>
-    <bcf:citekey order="22">athey2020combining</bcf:citekey>
-    <bcf:citekey order="23">imbens2000role</bcf:citekey>
-    <bcf:citekey order="24">athey2020combining</bcf:citekey>
-    <bcf:citekey order="25">athey2020combining</bcf:citekey>
-    <bcf:citekey order="26">athey2020combining</bcf:citekey>
-    <bcf:citekey order="27">yadlowsky2018bounds</bcf:citekey>
-    <bcf:citekey order="28">rosenbaum2002overt</bcf:citekey>
-    <bcf:citekey order="28">masten2018identification</bcf:citekey>
-    <bcf:citekey order="28">yadlowsky2018bounds</bcf:citekey>
-    <bcf:citekey order="29">yadlowsky2018bounds</bcf:citekey>
-    <bcf:citekey order="30">yadlowsky2018bounds</bcf:citekey>
-    <bcf:citekey order="31">van2000asymptotic</bcf:citekey>
-    <bcf:citekey order="32">andrews1994asymptotics</bcf:citekey>
-    <bcf:citekey order="33">Andrews2007InferenceFP</bcf:citekey>
-    <bcf:citekey order="33">stoye2020simple</bcf:citekey>
-    <bcf:citekey order="34">masten2018identification</bcf:citekey>
-    <bcf:citekey order="0" nocite="1">*</bcf:citekey>
-    <bcf:citekey order="35">yadlowsky2018bounds</bcf:citekey>
-    <bcf:citekey order="36">luenberger1997optimization</bcf:citekey>
-    <bcf:citekey order="37">yadlowsky2018bounds</bcf:citekey>
-    <bcf:citekey order="38">van2000asymptotic</bcf:citekey>
-    <bcf:citekey order="39">van2000asymptotic</bcf:citekey>
-    <bcf:citekey order="40">van2000asymptotic</bcf:citekey>
-    <bcf:citekey order="41">van2000asymptotic</bcf:citekey>
+    <bcf:citekey order="3">colnet2020causal</bcf:citekey>
+    <bcf:citekey order="3">huang2021leveraging</bcf:citekey>
+    <bcf:citekey order="3">ghassami2022combining</bcf:citekey>
+    <bcf:citekey order="4">rosenbaum2002overt</bcf:citekey>
+    <bcf:citekey order="5">masten2018identification</bcf:citekey>
+    <bcf:citekey order="6">rubin1974estimating</bcf:citekey>
+    <bcf:citekey order="7">andrews1994asymptotics</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
@@ -2079,13 +2037,4 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
-  <bcf:datalist section="0"
-                name="nyt/global//global/global"
-                type="entry"
-                sortingtemplatename="nyt"
-                sortingnamekeytemplatename="global"
-                labelprefix=""
-                uniquenametemplatename="global"
-                labelalphanametemplatename="global">
-  </bcf:datalist>
 </bcf:controlfile>

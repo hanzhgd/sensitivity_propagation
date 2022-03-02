@@ -1,4 +1,16 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
-\beamer@sectionintoc {1}{Summary of Existing Work}{3}{0}{1}
-\beamer@sectionintoc {2}{Simulation Exercise}{10}{0}{2}
-\beamer@sectionintoc {3}{Plans}{15}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {2}{Setup}{7}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{Identification}{14}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {4}{Estimation and Inference}{18}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {5}{Simulation}{22}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {6}{Conclusion}{28}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {7}{Appendix}{29}{0}{7}
