@@ -328,12 +328,16 @@ INPUT ../code/fig1.png
 INPUT /Users/xuhan/Documents/sensitivity_propagation/texfiles/../code/fig2.png
 INPUT ../code/fig2.png
 INPUT ../code/fig2.png
+INPUT /Users/xuhan/Documents/sensitivity_propagation/texfiles/../code/table1.tex
+INPUT /Users/xuhan/Documents/sensitivity_propagation/texfiles/../code/table1.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /Users/xuhan/Documents/sensitivity_propagation/texfiles/../code/table2.tex
+INPUT /Users/xuhan/Documents/sensitivity_propagation/texfiles/../code/table2.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmtt12.tfm

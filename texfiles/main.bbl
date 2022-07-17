@@ -863,6 +863,39 @@
       \field{year}{2020}
       \true{nocite}
     \endentry
+    \entry{mckenzie2017effective}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=eb23ea198dc9145fc0b0954b94e8aba9}{%
+           family={McKenzie},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{eb23ea198dc9145fc0b0954b94e8aba9}
+      \strng{fullhash}{eb23ea198dc9145fc0b0954b94e8aba9}
+      \strng{bibnamehash}{eb23ea198dc9145fc0b0954b94e8aba9}
+      \strng{authorbibnamehash}{eb23ea198dc9145fc0b0954b94e8aba9}
+      \strng{authornamehash}{eb23ea198dc9145fc0b0954b94e8aba9}
+      \strng{authorfullhash}{eb23ea198dc9145fc0b0954b94e8aba9}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The World Bank Research Observer}
+      \field{number}{2}
+      \field{title}{How effective are active labor market policies in developing countries? a critical review of recent evidence}
+      \field{volume}{32}
+      \field{year}{2017}
+      \true{nocite}
+      \field{pages}{127\bibrangedash 154}
+      \range{pages}{28}
+    \endentry
     \entry{pearl2014external}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=809f695b398afbb54b544c49e8d1bbbb}{%
